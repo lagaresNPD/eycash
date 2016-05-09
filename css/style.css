@@ -1,0 +1,71 @@
+body {
+	margin: 0 auto;
+	max-width: 960px;
+}
+.main {
+	border: 1px solid #555;
+}
+.navbar.navbar-custom {
+	border: none;
+	font-size: 90%;
+	margin: 0;
+	min-height: 0;
+}
+.navbar.navbar-custom li {
+	position: relative;
+}
+/* dividers */
+.navbar.navbar-custom li:before {
+	content: "|";
+	font-size: 80%;
+	position: absolute;
+	top: 45%;
+}
+.navbar.navbar-custom.navbar-mainnav li:before {
+	top: 35%;
+}
+.navbar.navbar-custom li:first-child:before,
+.navbar.navbar-custom li.btn:before  {
+	content: "";
+}
+
+.navbar-custom .user-options .navbar-text, 
+.navbar-custom .user-options a {
+	margin-bottom: 0; 
+	padding-bottom: 0;
+}
+.navbar-custom .user-options .btn {
+	border-radius: 0;
+	padding: 8px 12px;
+}
+.navbar-custom.navbar-mainnav {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+	border-radius: 0;	
+}
+.navbar-custom.navbar-mainnav .container-fluid {
+	padding-right: 0;
+}
+.navbar-custom.navbar-mainnav .navbar-header .navbar-brand {
+	background: #555;
+	color: #fff;
+	font-size: 100%;
+}
+.navbar-custom.navbar-mainnav .navbar-header h2 {
+	margin: 0;
+}
+.navbar-custom.navbar-mainnav .navbar-nav>.active>a {
+	border-bottom: .75rem solid #555;
+	margin: 0 15px;
+	padding-bottom: .25rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+.main .jumbotron {
+	border: 1px solid #555;
+	border-width: 2px 0 3px;
+}
+.main .jumbotron h1 {
+	font-size: 300%;
+	margin: 0;
+}
