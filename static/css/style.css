@@ -71,3 +71,16 @@ body {
 	font-size: 300%;
 	margin: 0;
 }
+
+.panel-warning .glyphicon {
+	opacity: 0.3;
+}
+
+.footer {
+	border-top: 1px solid #ddd;
+	padding: 1rem 0 0 0;
+}
+
+.footer .text-muted {
+	font-size: 75%;
+}
