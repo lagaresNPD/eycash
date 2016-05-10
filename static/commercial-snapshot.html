@@ -107,36 +107,39 @@
 				</div>
 
 				<!-- sidebar -->
-				<div class="col-sm-4">
-					<div class="panel panel-warning content-card">
+				<div class="sidebar col-sm-4">
+					<div class="panel panel-warning panel-alerts content-card">
 						<div class="panel-heading">
 							<h3 class="panel-title"><span class="glyphicon glyphicon-bell"></span> Alerts</h3>
 						</div>
-						<ul class="panel-body list-unstyled">
-							<li>one</li>
-							<li>two</li>
-							<li>three</li>
+						<ul class="panel-body list-group">
+							<li class="list-group-item up">one</li>
+							<li class="list-group-item up">two</li>
+							<li class="list-group-item down">three</li>
+							<li class="list-group-item"><a href="#">See All Alerts</a></li>
 						</ul>
 					</div>
-					<div class="panel panel-warning content-card">
+					<div class="panel panel-warning panel-trends content-card">
 						<div class="panel-heading">
 							<h3 class="panel-title"><span class="glyphicon glyphicon-stats"></span> Trends</h3>
 						</div>
-						<ul class="panel-body list-unstyled">
-							<li>one</li>
-							<li>two</li>
-							<li>three</li>
+						<ul class="panel-body list-group">
+							<li class="list-group-item up"><span class="glyphicon glyphicon-triangle-top"></span> one</li>
+							<li class="list-group-item up"><span class="glyphicon glyphicon-triangle-top"></span> two</li>
+							<li class="list-group-item down"><span class="glyphicon glyphicon-triangle-bottom"></span> three</li>
+							<li class="list-group-item"><a href="#">See All Trends</a></li>
 						</ul>
 					</div>
-					<div class="panel panel-warning content-card">
+					<div class="panel panel-warning panel-messages content-card">
 						<div class="panel-heading">
 							<h3 class="panel-title"><span class="glyphicon glyphicon-envelope"></span>
 Messages</h3>
 						</div>
-						<ul class="panel-body list-unstyled">
-							<li>one</li>
-							<li>two</li>
-							<li>three</li>
+						<ul class="panel-body list-group">
+							<li class="list-group-item">one <span class="badge">May 1</span></li>
+							<li class="list-group-item">two <span class="badge">Apr 29</span></li>
+							<li class="list-group-item">three <span class="badge">Apr 28</span></li>
+							<li class="list-group-item"><a href="#">All Messages</a></li>
 						</ul>
 					</div>
 				</div>
@@ -146,12 +149,16 @@ Messages</h3>
 		</div>
 
 
-		<footer class="footer row">
-			<div class="col-sm-2">
-				<p class="text-muted">&copy; 2016 Ernst &amp; Young</p>
-			</div>
-			<div class="col-sm-2">
-				<p class="text-muted">Powered by Microsoft</p>
+		<footer class="footer">
+			<div class="row">
+				<div class="container">					
+					<div class="col-sm-2">
+						<p class="text-muted">&copy; 2016 Ernst &amp; Young</p>
+					</div>
+					<div class="col-sm-2">
+						<p class="text-muted">Powered by Microsoft</p>
+					</div>
+				</div>
 			</div>
 		</footer>
 

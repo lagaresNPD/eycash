@@ -72,9 +72,44 @@ body {
 	margin: 0;
 }
 
-.panel-warning .glyphicon {
+.sidebar .panel .panel-title .glyphicon {
 	opacity: 0.3;
 }
+
+.sidebar .panel .panel-body {
+	padding: 0;
+}
+.sidebar .panel .list-group-item {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 0.5rem 1.5rem;
+	position: relative;
+}
+.sidebar .panel .badge {
+	background: transparent;
+	color: #ccc;
+}
+
+.sidebar .panel li.up,
+.sidebar .panel-alerts li.up:before {
+	background: #efe;
+	color: forestgreen;
+}
+.sidebar .panel li.down,
+.sidebar .panel-alerts li.down:before {
+	background: #fee;
+	color: darkred;
+}
+.sidebar .panel-alerts li:before {
+	background: transparent !important;
+	content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+	font-size: 300%;
+	line-height: 1rem;
+	padding-right: .5rem;
+	position: relative;
+    top: 1rem;
+}
+
 
 .footer {
 	border-top: 1px solid #ddd;
