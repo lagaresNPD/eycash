@@ -1,0 +1,73 @@
+/* utility */
+
+.abs-center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.abs-center.is-responsive {
+	width: 50%; 
+	height: 50%;
+	min-width: 300px;
+	max-width: 500px;
+	padding: 40px;
+}			
+
+
+/* inside pages */
+
+body {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.navbar.navbar-custom {
+	border: none;
+	font-size: 90%;
+	margin: 0;
+	min-height: 0;
+}
+.navbar.navbar-custom li {
+	position: relative;
+}
+
+.user-options {
+	background: rgba(0,0,0,0.7);
+	border-radius: 0;
+	width: 100%;
+}
+.user-options .btn {
+	border: none;
+	border-radius: 0;
+	color: #fff;
+}
+.user-options .btn-default {
+	background: transparent;
+}
+
+.navbar-custom.navbar-mainnav {
+	background-color: yellow;
+	border-radius: 0;	
+}
+.navbar-custom.navbar-mainnav a {
+	color: #333;
+	font-weight: bold;
+}
+
+.navbar-custom.navbar-mainnav .container-fluid {
+	padding-right: 0;
+}
+.navbar-custom.navbar-mainnav .navbar-header h2 {
+	font-size: 100%;
+	margin: 0;
+}
+
+.main .jumbotron {
+	background-color: gold;
+	border-bottom: 3px solid #999;
+}
+.main .jumbotron h1 {
+	font-size: 300%;
+	margin: 0;
+}

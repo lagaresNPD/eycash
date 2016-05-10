@@ -1,0 +1,56 @@
+/* login page */
+
+body {
+	background: gold;
+	max-width: none;
+}
+
+.nav-tabs {
+	border-bottom-color: transparent;
+}
+.nav-tabs>li>a {
+	background: yellow;
+	border: 1px solid transparent;
+	border-radius: 0;
+	color: #333;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	background: rgba(0,0,0,0.5);
+	border: none;
+	border-top: 3px solid transparent;
+	color: #fff;
+}
+.tab-content {
+	background: rgba(0,0,0,0.5);
+	border: none;
+	padding: 1rem;
+}
+.tab-content .form-control {
+	background: transparent;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	color: #fff;
+	margin: 0.5rem 0;
+}
+.tab-content .small {
+	margin: 0.5rem 0;
+}
+.tab-content .small a {
+	color: #fff;
+}
+
+footer {
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 0;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	padding: 1rem 0;
+	width: 100%;
+}
+footer .text-muted {
+	color: #fff;
+	font-size: 80%;
+}
