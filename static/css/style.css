@@ -18,6 +18,7 @@
 /* inside pages */
 
 body {
+	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0 auto;
 	max-width: 960px;
 }
@@ -69,10 +70,20 @@ body {
 }
 .main .jumbotron h1 {
 	font-size: 300%;
+	font-weight: 700;
 	margin: 0;
 }
 
-.sidebar .panel .panel-title .glyphicon {
+.panel-title {
+	font-weight: 700;
+}
+
+.sidebar .panel {
+	border-bottom: 4px solid #ccc;
+	border-radius: 0;
+}
+
+.sidebar .panel .panel-title .fa {
 	opacity: 0.3;
 }
 
@@ -89,27 +100,22 @@ body {
 	background: transparent;
 	color: #ccc;
 }
+.sidebar .panel p {
+	margin: 1rem 0;
+	text-align: center;
+}
+.sidebar .panel p a {
+	font-weight: bold;
+}
 
-.sidebar .panel li.up,
-.sidebar .panel-alerts li.up:before {
+.sidebar .panel .list-group-item.up {
 	background: #efe;
 	color: forestgreen;
 }
-.sidebar .panel li.down,
-.sidebar .panel-alerts li.down:before {
+.sidebar .panel .list-group-item.down {
 	background: #fee;
 	color: darkred;
 }
-.sidebar .panel-alerts li:before {
-	background: transparent !important;
-	content:"\2022"; /* /2022 is the numerical unicode for &bull; */
-	font-size: 300%;
-	line-height: 1rem;
-	padding-right: .5rem;
-	position: relative;
-    top: 1rem;
-}
-
 
 .footer {
 	border-top: 1px solid #ddd;
