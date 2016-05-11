@@ -23,7 +23,7 @@ body {
 	max-width: 960px;
 }
 
-.navbar.navbar-custom {
+/*.navbar.navbar-custom {
 	border: none;
 	font-size: 90%;
 	margin: 0;
@@ -32,7 +32,7 @@ body {
 .navbar.navbar-custom li {
 	position: relative;
 }
-
+*/
 .user-options {
 	background: rgba(0,0,0,0.7);
 	border-radius: 0;
@@ -47,21 +47,25 @@ body {
 	background: transparent;
 }
 
-.navbar-custom.navbar-mainnav {
+.mainnav {
 	background-color: yellow;
 	border-radius: 0;	
 }
-.navbar-custom.navbar-mainnav a {
+.mainnav a {
 	color: #333;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.navbar-custom.navbar-mainnav .container-fluid {
-	padding-right: 0;
-}
-.navbar-custom.navbar-mainnav .navbar-header h2 {
-	font-size: 100%;
+.mainnav h2 {
 	margin: 0;
+}
+.mainnav h2 a {
+	font-size: 120%;
+}
+.mainnav .btn-custom {
+	background: transparent;
+	font-size: 150%;
+	font-weight: 700;
 }
 
 .main .jumbotron {
