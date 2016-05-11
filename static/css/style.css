@@ -14,6 +14,9 @@
 	padding: 40px;
 }			
 
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
 
 /* inside pages */
 
@@ -55,13 +58,32 @@ body {
 	color: #333;
 	font-weight: 700;
 }
-
 .mainnav h2 {
 	margin: 0;
 }
 .mainnav h2 a {
 	font-size: 120%;
 }
+.mainnav .well {
+	background: rgba(0,0,0,0.8);
+	border: none;
+	border-radius: 0;
+}
+.mainnav .list-group {
+	border: none;
+	border-radius: 0;
+	margin: 3rem auto 0;
+	width: 66%;
+}
+.mainnav .list-group-item {
+	background: transparent;
+	border: none;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	color: #fff;
+	font-size: 250%;
+	text-align: center;
+}
+
 .mainnav .btn-custom {
 	background: transparent;
 	font-size: 150%;
