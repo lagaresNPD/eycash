@@ -54,6 +54,29 @@ body {
 	background-color: yellow;
 	border-radius: 0;	
 }
+.mainnav .btn {
+	position: relative;
+	z-index: 1;
+}
+.mainnav .btn:before {
+	content: "Menu ";
+}
+.mainnav .btn:after {
+	content: "\f0c9";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.mainnav .btn[aria-expanded="true"] {
+	color: #fff;
+}
+.mainnav .btn[aria-expanded="true"]:before {
+	content: "";
+}
+.mainnav .btn[aria-expanded="true"]:after {
+	content: "\f00d";
+    font-size: 200%;
+}
+
 .mainnav a {
 	color: #333;
 	font-weight: 700;
