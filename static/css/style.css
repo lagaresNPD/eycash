@@ -25,17 +25,6 @@ body {
 	margin: 0 auto;
 	max-width: 960px;
 }
-
-/*.navbar.navbar-custom {
-	border: none;
-	font-size: 90%;
-	margin: 0;
-	min-height: 0;
-}
-.navbar.navbar-custom li {
-	position: relative;
-}
-*/
 .user-options {
 	background: rgba(0,0,0,0.7);
 	border-radius: 0;
@@ -54,26 +43,31 @@ body {
 	background-color: gold;
 	border-bottom: 1px solid yellow;
 	border-radius: 0;
-}
-.mainnav .btn {
+	min-height: 50px;
 	position: relative;
+}
+.mainnav .btn-menu {
+	background: transparent;
+	font-weight: 700;
+	position: absolute;
+	right: 0;
 	z-index: 1;
 }
-.mainnav .btn:before {
+.mainnav .btn-menu:before {
 	content: "Menu ";
 }
-.mainnav .btn:after {
+.mainnav .btn-menu:after {
 	content: "\f0c9";
     font: normal normal normal 14px/1 FontAwesome;
 }
 
-.mainnav .btn[aria-expanded="true"] {
+.mainnav .btn-menu[aria-expanded="true"] {
 	color: #fff;
 }
-.mainnav .btn[aria-expanded="true"]:before {
+.mainnav .btn-menu[aria-expanded="true"]:before {
 	content: "";
 }
-.mainnav .btn[aria-expanded="true"]:after {
+.mainnav .btn-menu[aria-expanded="true"]:after {
 	content: "\f00d";
     font-size: 200%;
 }
@@ -84,35 +78,67 @@ body {
 }
 .mainnav h2 {
 	margin: 0;
+	position: absolute;
+	left: 0;
 }
 .mainnav h2 a {
 	font-size: 120%;
 }
-.mainnav .well {
+.mainnav .collapse {
+	background: yellow;
+	border: none;
+	border-radius: 0;
+}
+.mainnav > .collapse {
 	background: rgba(0,0,0,0.8);
-	border: none;
-	border-radius: 0;
 }
-.mainnav .list-group {
-	border: none;
-	border-radius: 0;
-}
-.mainnav .list-group-item {
+
+.mainnav .list-group-item, 
+.mainnav .list-group-item .btn-submenu {
 	background: transparent;
 	border: none;
 	border-radius: 0;
 	border-top: 1px solid rgba(255,255,255,0.3);
 	color: #fff;
-	font-size: 250%;
-	margin: 3rem auto 0;
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: 2rem 0;
 	text-align: center;
+}
+.mainnav .list-group-item:first-child, 
+.mainnav .list-group-item .btn-submenu {
+	border: none;
+	margin: 0 auto;
+}
+.mainnav .list-group-item .btn-submenu {
+	margin: 0 auto;
+	padding: 0;
+}
+.mainnav .list-group-item .btn-submenu[aria-expanded="true"] {
+	background: yellow; 
+	border-top: 2px solid rgba(0,0,0,0.3);
+	color: #333;
+	display: block;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.mainnav > .list-group .list-group-item {
 	width: 66%;
 }
 
-.mainnav .btn-custom {
-	background: transparent;
-	font-size: 150%;
-	font-weight: 700;
+.mainnav > .list-group .list-group-item a {
+	color: #fff;
+}
+.mainnav .list-group-item a:hover {
+	text-decoration: none;
+}
+
+.mainnav .list-group .list-group .list-group-item {
+	color: #333;
+	font-size: 1.75rem;
+	font-weight: 400;
 }
 
 .jumbotron {
