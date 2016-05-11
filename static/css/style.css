@@ -84,12 +84,12 @@ body {
 .mainnav h2 a {
 	font-size: 120%;
 }
-.mainnav .collapse {
-	background: yellow;
+.mainnav .list-group {
+	background: gold;
 	border: none;
 	border-radius: 0;
 }
-.mainnav > .collapse {
+.mainnav > .list-group {
 	background: rgba(0,0,0,0.8);
 }
 
@@ -116,7 +116,7 @@ body {
 	padding: 0;
 }
 .mainnav .list-group-item .btn-submenu[aria-expanded="true"] {
-	background: yellow; 
+	background: gold; 
 	border-top: 2px solid rgba(0,0,0,0.3);
 	color: #333;
 	display: block;
@@ -151,6 +151,17 @@ body {
 	font-weight: 700;
 	margin: 0;
 }
+.jumbotron h2 {
+	color: #666;
+	font-size: 1.5rem;
+	margin: 0;
+}
+.jumbotron .fa {
+	color: #369;
+	display: inline-block;
+	margin: 0 0.5rem;
+}
+
 .main .row {
 	margin-left: -0.25rem;
 	margin-right: -0.25rem;
