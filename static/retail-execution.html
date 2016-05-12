@@ -46,22 +46,24 @@
 					</div>
 				</div>
 				<!-- site navigation -->
-				<div class="mainnav">
-					<h2 class="pull-left"><a class="navbar-brand" href="index.html">EY CASH</a></h2>
-					<div class="clearfix">
-						<button class="btn btn-custom pull-right" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu"><span></span></button>
-						<div class="collapse" id="collapseMenu">
-							<div class="well">
-								<div class="list-group">
-									<a class="list-group-item" href="commercial-snapshot.html">Commercial Snapshot</a>
-									<a class="list-group-item" href="growth-drivers.html">Growth Drivers</a>
-									<a class="list-group-item" href="revenue-growth-management.html">Revenue Growth Management</a>
-									<a class="list-group-item" href="marketing-productivity.html">Marketing Productivity</a>
-									<a class="list-group-item" href="retail-execution.html">Retail Execution</a>
-								</div>
-							</div>
-						</div>				
-					</div>
+				<div class="mainnav clearfix">
+					<h2><a class="navbar-brand" href="index.html">EY CASH</a></h2>
+					<button class="btn btn-custom btn-menu" type="button" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu"><span></span></button>
+					<ul class="list-group collapse" id="collapseMenu">
+						<li class="list-group-item"><a href="commercial-snapshot.html">Commercial Snapshot</a></li>
+						<li class="list-group-item"><a href="growth-drivers.html">Growth Drivers</a></li>
+						<li class="list-group-item">
+							<button class="btn btn-submenu" type="button" data-toggle="collapse" data-target="#collapseSubmenu" aria-expanded="false" aria-controls="collapseSubmenu">Revenue Growth Management</button>
+							<div class="list-group collapse" id="collapseSubmenu">
+								<a href="price-diagnostic.html" class="list-group-item">Price Diagnostic</a>
+								<a href="price-simulation.html" class="list-group-item">Price Simulation</a>
+								<a href="trade-promotion-opt.html" class="list-group-item">Trade Promotion Optimization</a>
+								<a href="post-event-ana.html" class="list-group-item">Post Event Analysis</a>
+							</div> 
+						</li>
+						<li class="list-group-item"><a href="marketing-productivity.html">Marketing Productivity</a></li>
+						<li class="list-group-item"><a href="retail-execution.html">Retail Execution</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
