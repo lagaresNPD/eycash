@@ -199,6 +199,14 @@ body {
 
 /* tables styling */
 
+.main table.data-table.fixed {
+	background: #fff;
+	position: absolute;
+	left: 0;
+	max-width: 100px;
+	z-index: 9;
+}
+
 .main table.data-table td {
 	text-align: right;
 }
