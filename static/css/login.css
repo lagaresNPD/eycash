@@ -1,7 +1,8 @@
 /* login page */
 
 body {
-	background: gold;
+	background: #ffe600 url(../images/EYCash_splashBG-01.jpg) no-repeat;
+	background-size: cover;
 	max-width: none;
 }
 

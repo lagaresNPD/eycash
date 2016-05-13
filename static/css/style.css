@@ -23,8 +23,8 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0 auto;
-	max-width: 960px;
-}
+	/*max-width: 960px;*/
+}	
 .user-options {
 	background: rgba(0,0,0,0.7);
 	border-radius: 0;
@@ -48,6 +48,7 @@ body {
 }
 .mainnav .btn-menu {
 	background: transparent;
+	font-size: 150%;
 	font-weight: 700;
 	position: absolute;
 	right: 0;
@@ -82,7 +83,11 @@ body {
 	left: 0;
 }
 .mainnav h2 a {
-	font-size: 120%;
+	padding: 0;
+}
+.mainnav h2 img {
+	height: 4rem;
+	margin: 0.5rem;
 }
 .mainnav .list-group {
 	background: #ffe600;
@@ -141,6 +146,7 @@ body {
 	font-weight: 400;
 }
 
+/* this is where the title of each page resides */
 .jumbotron {
 	background-color: #ffe600;
 	border-bottom: 3px solid #999;
@@ -162,6 +168,7 @@ body {
 	margin: 0 0.5rem;
 }
 
+/* this is the row that houses each page's main content */
 .main .row {
 	margin-left: -0.25rem;
 	margin-right: -0.25rem;
@@ -182,13 +189,14 @@ body {
 }
 
 .main th.highlight {
-	background: #ffe600;
+	background: #ffffe0;
 }
 
 .main td.highlight {
 	background: #ffffe0;
 }
 
+/* this is the 'alerts' sidebar */
 .sidebar .panel {
 	border: none;
 	border-bottom: 4px solid #ccc;
@@ -234,6 +242,7 @@ body {
 	color: darkred;
 }
 
+/* global footer */
 .footer {
 	border-top: 1px solid #ddd;
 	padding: 1rem 0 0 0;
