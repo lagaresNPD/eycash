@@ -193,7 +193,7 @@ body {
 }
 
 .main .btn-block {
-	border: 1rem solid #fff;
+	border: 1rem solid transparent;
 	color: #fff;
 }
 
@@ -285,13 +285,15 @@ body {
 }
 
 .sidebar .panel .list-group-item.up {
-	background: #efe;
-	color: forestgreen;
+	background: rgba(102,153,51,0.2);
+	color: rgba(102,153,51,1);
 }
 .sidebar .panel .list-group-item.down {
-	background: #fee;
-	color: darkred;
+	background: rgba(153,0,0,0.2);
+	color: rgba(153,0,0,1);
 }
+
+
 
 /* global footer */
 .footer {

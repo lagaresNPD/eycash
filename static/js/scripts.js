@@ -1,13 +1,23 @@
 
 /* highlight table column */
 $('.data-table th').click(function() {
+
     var th_index = $(this).index();
-	$('.data-table thead th').removeClass('highlight');
-    $(this).addClass('highlight');
-    $('.data-table tr').each(function() {
-        $(this).find('td').removeClass('highlight');
-    	$(this).find('td').eq(th_index -1).addClass('highlight');
-    });
+
+    $('.data-table thead th').removeClass('highlight');
+    $('.data-table td').removeClass('highlight');
+
+   if($(this).index() !== 0) {
+        $(this).addClass('highlight');
+        $('tr').each(function() {
+            if($(this).find('td').eq(th_index -1).hasClass('highlight')){
+                $(this).find('td').eq(th_index -1).removeClass('highlight');
+            } else {
+                $(this).find('td').removeClass('highlight');
+                $(this).find('td').eq(th_index -1).toggleClass('highlight');
+            }
+        });
+    }
 });
 
 /* number cells in a top-5 table */
