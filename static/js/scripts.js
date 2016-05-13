@@ -1,15 +1,18 @@
-$('th').click(function() {
+
+/* highlight table column */
+$('.data-table th').click(function() {
     var th_index = $(this).index();
-	$('thead th').removeClass('highlight');
+	$('.data-table thead th').removeClass('highlight');
     $(this).addClass('highlight');
-    $('tr').each(function() {
+    $('.data-table tr').each(function() {
         $(this).find('td').removeClass('highlight');
     	$(this).find('td').eq(th_index -1).addClass('highlight');
-        // if($(this).find('td').eq(th_index -1).hasClass('highlight')){
-        //     $(this).find('td').eq(th_index -1).removeClass('highlight');
-        // } else {
-        //     $(this).find('td').removeClass('highlight');
-        //     $(this).find('td').eq(th_index -1).toggleClass('highlight');
-        // }
     });
 });
+
+/* number cells in a top-5 table */
+// $(document).ready(function(){
+// 	$('.top5-table tr').each(function(tr_index){
+// 		$(this).children().first().html(tr_index + 1);
+// 	});
+// });

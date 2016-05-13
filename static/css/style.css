@@ -14,6 +14,10 @@
 	padding: 40px;
 }			
 
+.btn {
+	border-radius: 0;
+}
+
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: none;
 }
@@ -188,49 +192,59 @@ body {
 	font-weight: 700;
 }
 
+.main .btn-block {
+	border: 1rem solid #fff;
+	color: #fff;
+}
+
 /* tables styling */
 
-.main table td {
+.main table.data-table td {
 	text-align: right;
 }
-.main table th:first-child {
+.main table.data-table th:first-child {
 	background: #fff;
-	position: fixed;
-	width: 100px;
 }
-.main table thead th {
+.main table.data-table thead th {
 	background: #000;
 	color: #fff;
 	text-align: center;
 }
-.main table thead th:first-child {
+.main table.data-table thead th:first-child {
 	background: inherit;
 	color: inherit;
 	text-align: left;
 }
-td.gradeA {
+.main table.data-table td.gradeA {
 	background-color: rgba(153,204,102,0.6);
 }
-td.gradeB {
+.main table.data-table td.gradeB {
 	background-color: rgba(153,204,102,0.4);
 }
-td.gradeC {
+.main table.data-table td.gradeC {
 	background-color: rgba(255,255,102,0.5);
 }
-td.gradeD {
+.main table.data-table td.gradeD {
 	background-color: rgba(204,0,0,0.2);
 }
-td.gradeF {
+.main table.data-table td.gradeF {
 	background-color: rgba(204,0,0,0.4);
 }
 
-.main thead th.highlight {
-	background: rgba(255,255,102,0.5);
+.main table.data-table thead th.highlight {
+	background: #ffe600;
 	color: #000;
 }
 
-.main td.highlight {
+.main table.data-table td.highlight {
 	background: rgba(255,255,102,0.5);
+}
+
+.main table.top5-table td:first-child {
+	color: #999;
+	font-weight: 700;
+	padding: 0.5rem 0 0.5rem 1.5rem;
+	width: 2rem;
 }
 
 /* this is the 'alerts' sidebar */
