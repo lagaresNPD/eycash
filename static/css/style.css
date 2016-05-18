@@ -154,7 +154,6 @@ body {
 .jumbotron {
 	background-color: #ffe600;
 	border-bottom: 3px solid #999;
-	margin-bottom: 0.5rem;
 }
 .jumbotron h1 {
 	font-size: 300%;
@@ -170,6 +169,26 @@ body {
 	color: #369;
 	display: inline-block;
 	margin: 0 0.5rem;
+}
+
+.filters {
+	/*position: absolute;*/
+	margin-bottom: -48px;
+}
+
+.filters .btn-custom {
+	background: #ffe600;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-width: 1px 1px 1px 0;
+}
+
+.filters .btn-custom:first-child {
+	border-left: 1px;
+}
+
+.filters.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+	width: 100%;
 }
 
 /* this is the row that houses each page's main content */
@@ -199,30 +218,55 @@ body {
 
 /* tables styling */
 
-.main table.data-table.fixed {
-	background: #fff;
-	position: absolute;
-	left: 0;
-	max-width: 100px;
-	z-index: 9;
-}
+.main table.data-table {
+/*	width: auto;
+	position: relative;
+	left: 150px;
+*/}
 
 .main table.data-table td {
 	text-align: right;
 }
 .main table.data-table th:first-child {
 	background: #fff;
+	color: #fff;
+}
+.main table.data-table.first-column th:first-child {
+	color: #333;
+}
+
+/* first-column table stays put while the responsive-table cells scroll behind it */
+
+.main table.data-table.first-column {
+	position: absolute;
+	left: 0;
+	width: auto;
+	z-index: 9;
 }
 .main table.data-table thead th {
 	background: #000;
+	border-radius: 0 !important;
 	color: #fff;
 	text-align: center;
 }
 .main table.data-table thead th:first-child {
-	background: inherit;
+	background: #fff;
 	color: inherit;
 	text-align: left;
 }
+.main table.data-table th:first-child {
+	background: #fff;
+}
+.main table.top5-table td:first-child {
+	color: #999;
+	font-weight: 700;
+	padding: 0.5rem 0 0.5rem 1.5rem;
+	width: 2rem;
+}
+
+
+/* highlighted cells */
+
 .main table.data-table td.gradeA {
 	background-color: rgba(153,204,102,0.6);
 }
@@ -248,12 +292,25 @@ body {
 	background: rgba(255,255,102,0.5);
 }
 
-.main table.top5-table td:first-child {
-	color: #999;
-	font-weight: 700;
-	padding: 0.5rem 0 0.5rem 1.5rem;
-	width: 2rem;
+/* bulleted cells */
+
+.main table.data-table .bullet {
+	border-radius: 50%;
+	display: block;
+	height: 1rem;
+	margin: 0 auto;
+	width: 1rem;
 }
+.main table.data-table .bullet.gradeA {
+	background-color: rgba(153,204,102,1);
+}
+.main table.data-table .bullet.gradeC {
+	background-color: rgba(255,255,102,1);
+}
+.main table.data-table .bullet.gradeF {
+	background-color: rgba(204,0,0,1);
+}
+
 
 /* this is the 'alerts' sidebar */
 .sidebar .panel {
