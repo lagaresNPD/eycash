@@ -233,10 +233,10 @@ body {
 }
 .main table.data-table.first-column th:first-child {
 	color: #333;
+	font-weight: 400;
 }
 
 /* first-column table stays put while the responsive-table cells scroll behind it */
-
 .main table.data-table.first-column {
 	position: absolute;
 	left: 0;
@@ -247,6 +247,7 @@ body {
 	background: #000;
 	border-radius: 0 !important;
 	color: #fff;
+	font-weight: 700	;
 	text-align: center;
 }
 .main table.data-table thead th:first-child {
@@ -256,7 +257,10 @@ body {
 }
 .main table.data-table th:first-child {
 	background: #fff;
+	width: auto;
 }
+
+/* top 5 boxes in commercial snapshot */
 .main table.top5-table td:first-child {
 	color: #999;
 	font-weight: 700;

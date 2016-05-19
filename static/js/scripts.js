@@ -11,9 +11,11 @@ $('.data-table th').click(function() {
         $(this).addClass('highlight');
         $('tr').each(function() {
             if($(this).find('td').eq(th_index -1).hasClass('highlight')){
+                $(this).find('th').eq(th_index -1).removeClass('highlight');
                 $(this).find('td').eq(th_index -1).removeClass('highlight');
             } else {
                 $(this).find('td').removeClass('highlight');
+                $(this).find('th').eq(th_index).addClass('highlight');
                 $(this).find('td').eq(th_index -1).toggleClass('highlight');
             }
         });
