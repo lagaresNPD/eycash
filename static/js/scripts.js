@@ -1,11 +1,11 @@
 
 /* highlight table column */
-$('.data-table th').click(function() {
+$('.highlightable-column th').click(function() {
 
     var th_index = $(this).index();
 
-    $('.data-table thead th').removeClass('highlight');
-    $('.data-table td').removeClass('highlight');
+    $('.highlightable-column thead th').removeClass('highlight');
+    $('.highlightable-column td').removeClass('highlight');
 
    if($(this).index() !== 0) {
         $(this).addClass('highlight');
