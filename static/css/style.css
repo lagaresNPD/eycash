@@ -180,16 +180,27 @@ body {
 	background: #ffe600;
 	border: 1px solid rgba(0,0,0,0.3);
 	border-width: 1px 1px 1px 0;
+	text-align: left;
 }
 
 .filters .btn-custom:first-child {
 	border-left: 1px;
 }
 
+.filters .btn-custom .small {
+	display: block;
+	font-size: 66%;
+}
+.filters .btn-custom .caret {
+	float: right;
+}
+
 .filters.btn-group.open .dropdown-toggle {
 	box-shadow: none;
 	width: 100%;
 }
+
+
 
 /* this is the row that houses each page's main content */
 .main .row {
