@@ -3,6 +3,8 @@
 body {
 	background: #ffe600 url(../images/EYCash_splashBG-01.jpg) no-repeat;
 	background-size: cover;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0 auto;
 	max-width: none;
 }
 
