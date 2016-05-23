@@ -1,0 +1,436 @@
+/* utility */
+
+.abs-center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.abs-center.is-responsive {
+	width: 50%; 
+	height: 50%;
+	min-width: 300px;
+	max-width: 500px;
+	padding: 40px;
+}			
+
+.btn {
+	border-radius: 0;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+
+/* quick way to make iframes responsive to their parent */
+iframe, embed, object {
+	max-width: 100% !important;
+}
+
+/* inside pages */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	/*max-width: 960px;*/
+}	
+.user-options {
+	background: rgba(0,0,0,0.7);
+	border-radius: 0;
+	width: 100%;
+}
+.user-options .btn {
+	border: none;
+	border-radius: 0;
+	color: #fff;
+}
+.user-options .btn-default {
+	background: transparent;
+}
+
+.mainnav {
+	background-color: #ffe600;
+	border-bottom: 1px solid yellow;
+	border-radius: 0;
+	min-height: 50px;
+	position: relative;
+}
+.mainnav .btn-menu {
+	background: transparent;
+	font-size: 150%;
+	font-weight: 700;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.mainnav .btn-menu:before {
+	content: "Menu ";
+}
+.mainnav .btn-menu:after {
+	content: "\f0c9";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.mainnav .btn-menu[aria-expanded="true"] {
+	color: #fff;
+}
+.mainnav .btn-menu[aria-expanded="true"]:before {
+	content: "";
+}
+.mainnav .btn-menu[aria-expanded="true"]:after {
+	content: "\f00d";
+    font-size: 200%;
+}
+
+.mainnav a {
+	color: #333;
+	font-weight: 700;
+}
+.mainnav h2 {
+	margin: 0;
+	position: absolute;
+	left: 0;
+}
+.mainnav h2 a {
+	padding: 0;
+}
+.mainnav h2 img {
+	height: 4rem;
+	margin: 0.5rem;
+}
+.mainnav .list-group {
+	background: #ffe600;
+	border: none;
+	border-radius: 0;
+}
+.mainnav > .list-group {
+	background: rgba(0,0,0,0.8);
+}
+
+.mainnav .list-group-item, 
+.mainnav .list-group-item .btn-submenu {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: 2rem 0;
+	text-align: center;
+}
+.mainnav .list-group-item:first-child, 
+.mainnav .list-group-item .btn-submenu {
+	border: none;
+	margin: 0 auto;
+}
+.mainnav .list-group-item .btn-submenu {
+	margin: 0 auto;
+	padding: 0;
+}
+.mainnav .list-group-item .btn-submenu[aria-expanded="true"] {
+	background: #ffe600; 
+	border-top: 2px solid rgba(0,0,0,0.3);
+	color: #333;
+	display: block;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.mainnav > .list-group .list-group-item {
+	width: 66%;
+}
+
+.mainnav > .list-group .list-group-item a {
+	color: #fff;
+}
+.mainnav .list-group-item a:hover {
+	text-decoration: none;
+}
+
+.mainnav .list-group .list-group .list-group-item {
+	color: #333;
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+
+/* this is where the title of each page resides */
+.jumbotron {
+	background-color: #ffe600;
+	border-bottom: 3px solid #999;
+}
+.jumbotron h1 {
+	font-size: 300%;
+	font-weight: 700;
+	margin: 0;
+}
+.jumbotron h2 {
+	color: #666;
+	font-size: 1.5rem;
+	margin: 0;
+}
+.jumbotron .fa {
+	color: #369;
+	display: inline-block;
+	margin: 0 0.5rem;
+}
+
+.filters {
+	/*position: absolute;*/
+	margin-bottom: -48px;
+}
+
+.filters .btn-custom {
+	background: #ffe600;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-width: 1px 1px 1px 0;
+	text-align: left;
+}
+
+.filters .btn-custom:first-child {
+	border-left: 1px;
+}
+
+.filters .btn-custom .small {
+	display: block;
+	font-size: 66%;
+}
+.filters .btn-custom .caret {
+	float: right;
+}
+
+.filters.btn-group.open .dropdown-toggle {
+	box-shadow: none;
+	width: 100%;
+}
+
+
+
+/* this is the row that houses each page's main content */
+.main .row {
+	margin-left: -0.25rem;
+	margin-right: -0.25rem;
+}
+.main .subnav {
+}
+.main .subnav a {
+	font-weight: 700;
+}
+.main .subnav .active a {
+	background: #999;
+}
+.main h3 {
+	font-weight: 700;
+	margin: 2.5rem 0 2.5rem 1.5rem;
+}
+.main .col {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+
+.main .panel {
+	border-radius: 0;
+	margin: 0 0 0.5rem;
+}
+
+.main .panel-title {
+	font-size: 100%;
+	font-weight: 700;
+}
+
+.main .btn-block {
+	border: 1rem solid transparent;
+	color: #fff;
+}
+
+/* tables styling */
+
+.main table.data-table {
+/*	width: auto;
+	position: relative;
+	left: 150px;
+*/}
+
+.main table.data-table td {
+	position: relative;
+	text-align: right;
+}
+.main table.data-table th {
+	width: 180px;
+}
+.main table.data-table th:first-child {
+	background: #fff;
+	color: #fff;
+}
+.main table.data-table.first-column th {
+	background: #fff;
+	color: #333;
+	font-weight: 400;
+}
+
+/* first-column table stays put while the responsive-table cells scroll behind it */
+.main table.data-table.first-column {
+	position: absolute;
+	left: 0;
+	width: auto;
+	z-index: 9;
+	/*display: none;  for testing */
+}
+.main table.data-table thead th {
+	background: #000;
+	border-radius: 0 !important;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+}
+.main table.data-table thead th:first-child {
+	background: #fff;
+	color: inherit;
+	text-align: left;
+}
+.main table.data-table th:first-child {
+	background: #fff;
+	/*width: auto;*/
+}
+
+/* top 5 boxes in commercial snapshot */
+.main table.top5-table td:first-child {
+	color: #999;
+	font-weight: 700;
+	padding: 0.5rem 0 0.5rem 1.5rem;
+	width: 2rem;
+}
+
+
+/* highlighted cells */
+
+.main table.data-table td.gradeA {
+	background-color: rgba(153,204,102,0.6);
+}
+.main table.data-table td.gradeB {
+	background-color: rgba(153,204,102,0.4);
+}
+.main table.data-table td.gradeC {
+	background-color: rgba(255,255,102,0.5);
+}
+.main table.data-table td.gradeD {
+	background-color: rgba(204,0,0,0.2);
+}
+.main table.data-table td.gradeF {
+	background-color: rgba(204,0,0,0.4);
+}
+
+.main table.data-table thead th.highlight {
+	background: #ffe600;
+	color: #000;
+}
+
+.main table.data-table td.highlight {
+	background: rgba(255,255,102,0.5);
+}
+
+/* bulleted cells */
+
+.main table.data-table .bullet {
+	border-radius: 50%;
+	display: block;
+	height: 1rem;
+	margin: 0 auto;
+	width: 1rem;
+}
+.main table.data-table .bullet.gradeA {
+	background-color: rgba(153,204,102,1);
+}
+.main table.data-table .bullet.gradeC {
+	background-color: rgba(255,255,102,1);
+}
+.main table.data-table .bullet.gradeF {
+	background-color: rgba(204,0,0,1);
+}
+
+/* progress bars/ gantt chart bars */
+.main table.data-table .progress {
+	margin-bottom: 0;
+	z-index: 0;
+}
+
+.main table.data-table .btn-primary, 
+.main table.data-table .well {
+	background; position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+}
+
+.main table.data-table .btn-primary {
+	z-index: 2;
+}
+
+.main table.data-table .well {
+	background: #ffc;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);
+	padding: 4rem;
+	z-index: 1;
+}
+
+
+/* this is the 'alerts' sidebar */
+.sidebar .panel {
+	border: none;
+	border-bottom: 4px solid #ccc;
+	border-radius: 0;
+}
+.sidebar .panel>.panel-heading {
+    color: rgba(0,0,0,0.8);
+    background-color: #ffe600;
+	border-radius: 0;
+}
+
+.sidebar .panel .panel-title .fa {
+	opacity: 0.5;
+}
+
+.sidebar .panel .panel-body {
+	padding: 0;
+}
+.sidebar .panel .list-group-item {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 0.5rem 1.5rem;
+	position: relative;
+}
+.sidebar .panel .badge {
+	background: transparent;
+	color: #ccc;
+}
+.sidebar .panel p {
+	margin: 1rem 0;
+	text-align: center;
+}
+.sidebar .panel p a {
+	font-weight: bold;
+}
+
+.sidebar .panel .list-group-item.up {
+	background: rgba(102,153,51,0.2);
+	color: rgba(102,153,51,1);
+}
+.sidebar .panel .list-group-item.down {
+	background: rgba(153,0,0,0.2);
+	color: rgba(153,0,0,1);
+}
+
+
+
+/* global footer */
+.footer {
+	border-top: 1px solid #ddd;
+	padding: 1rem 0 0 0;
+}
+
+.footer .text-muted {
+	font-size: 75%;
+}
