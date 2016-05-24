@@ -257,12 +257,13 @@ body {
 	text-align: right;
 }
 .main table.data-table th {
-	width: 180px;
+	/*width: 180px;*/
 }
-.main table.data-table th:first-child {
+/*.main table.data-table th:first-child {
 	background: #fff;
 	color: #fff;
 }
+*/
 .main table.data-table.first-column th {
 	background: #fff;
 	color: #333;
@@ -277,21 +278,24 @@ body {
 	z-index: 9;
 	/*display: none;  for testing */
 }
-.main table.data-table thead th {
+.main table.data-table thead th.inverse {
+	background: #fff;
+	color: inherit;
+	text-align: left;
+}
+/*.main table.data-table th:first-child, 
+.main table.data-table th {
+	background: #fff;
+	width: auto;
+}*/
+
+.main table.data-table thead th
+ {
 	background: #000;
 	border-radius: 0 !important;
 	color: #fff;
 	font-weight: 700;
 	text-align: center;
-}
-.main table.data-table thead th:first-child {
-	background: #fff;
-	color: inherit;
-	text-align: left;
-}
-.main table.data-table th:first-child {
-	background: #fff;
-	/*width: auto;*/
 }
 
 /* top 5 boxes in commercial snapshot */
@@ -414,7 +418,9 @@ body {
 .sidebar .panel p a {
 	font-weight: bold;
 }
-
+.sidebar .panel h3.panel-title {
+	margin: 0;
+}
 .sidebar .panel .list-group-item.up {
 	background: rgba(102,153,51,0.2);
 	color: rgba(102,153,51,1);
