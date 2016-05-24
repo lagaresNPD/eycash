@@ -22,9 +22,10 @@
     outline: none;
 }
 
-/* quick way to make iframes responsive to their parent */
+/* quick way to make iframes responsive to their parent */	
 iframe, embed, object {
 	max-width: 100% !important;
+	width: 100%;
 }
 
 /* inside pages */
