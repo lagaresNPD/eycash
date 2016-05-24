@@ -23,7 +23,7 @@ $('.highlightable-column th').click(function() {
 });
 
 /* initialize editable table */
-$('.row-table').editableTableWidget();
+$('.editable-table').editableTableWidget();
 
 /* number cells in a top-5 table */
 // $(document).ready(function(){
