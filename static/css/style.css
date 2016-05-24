@@ -246,51 +246,75 @@ body {
 
 /* tables styling */
 
-.main table.data-table {
+.main .data-table {
 /*	width: auto;
 	position: relative;
 	left: 150px;
 */}
 
-.main table.data-table td {
+.main .data-table td {
 	position: relative;
 	text-align: right;
 }
-.main table.data-table th {
-	/*width: 180px;*/
+.main .data-table p {
+	white-space: nowrap;
 }
-/*.main table.data-table th:first-child {
-	background: #fff;
-	color: #fff;
+.main .data-table.editable-table p {
+	white-space: normal;
 }
-*/
-.main table.data-table.first-column th {
+
+.main .data-table th p {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+.main .data-table th p.small {
+	font-size: .9rem;
+}
+.main .data-table th p.small em {
+	color: #999;
+	font-style: italic;
+}
+
+.main .data-table.first-column th {
 	background: #fff;
 	color: #333;
 	font-weight: 400;
 }
 
+#promoCal .fwidth {
+	/*width: 100px !important;*/
+}
+
+#promoCal th.week {
+	width: 50px;
+}
+#promoCal td {
+	text-align: left;
+}
+
+#promoCal td[colspan="52"] {
+	padding: 0;
+}
+
+#promoCal table {
+	background: rgba(255,255,102,0.5);
+}
+
 /* first-column table stays put while the responsive-table cells scroll behind it */
-.main table.data-table.first-column {
+.main .data-table.first-column {
 	position: absolute;
 	left: 0;
 	width: auto;
 	z-index: 9;
 	/*display: none;  for testing */
 }
-.main table.data-table thead th.inverse {
+.main .data-table thead th.inverse {
 	background: #fff;
 	color: inherit;
 	text-align: left;
 }
-/*.main table.data-table th:first-child, 
-.main table.data-table th {
-	background: #fff;
-	width: auto;
-}*/
-
-.main table.data-table thead th
- {
+.main .data-table thead th {
 	background: #000;
 	border-radius: 0 !important;
 	color: #fff;
@@ -299,7 +323,7 @@ body {
 }
 
 /* top 5 boxes in commercial snapshot */
-.main table.top5-table td:first-child {
+.main .top5-table td:first-child {
 	color: #999;
 	font-weight: 700;
 	padding: 0.5rem 0 0.5rem 1.5rem;
@@ -309,23 +333,23 @@ body {
 
 /* highlighted cells */
 
-.main table.data-table td.gradeA {
+.main .data-table .gradeA {
 	background-color: rgba(153,204,102,0.6);
 }
-.main table.data-table td.gradeB {
+.main .data-table .gradeB {
 	background-color: rgba(153,204,102,0.4);
 }
-.main table.data-table td.gradeC {
+.main .data-table .gradeC {
 	background-color: rgba(255,255,102,0.5);
 }
-.main table.data-table td.gradeD {
+.main .data-table .gradeD {
 	background-color: rgba(204,0,0,0.2);
 }
-.main table.data-table td.gradeF {
+.main .data-table .gradeF {
 	background-color: rgba(204,0,0,0.4);
 }
 
-.main table.data-table thead th.highlight {
+.main .data-table thead th.highlight {
 	background: #ffe600;
 	color: #000;
 }
@@ -336,42 +360,42 @@ body {
 
 /* bulleted cells */
 
-.main table.data-table .bullet {
+.main .data-table .bullet {
 	border-radius: 50%;
 	display: block;
 	height: 1rem;
 	margin: 0 auto;
 	width: 1rem;
 }
-.main table.data-table .bullet.gradeA {
+.main .data-table .bullet.gradeA {
 	background-color: rgba(153,204,102,1);
 }
-.main table.data-table .bullet.gradeC {
+.main .data-table .bullet.gradeC {
 	background-color: rgba(255,255,102,1);
 }
-.main table.data-table .bullet.gradeF {
+.main .data-table .bullet.gradeF {
 	background-color: rgba(204,0,0,1);
 }
 
 /* progress bars/ gantt chart bars */
-.main table.data-table .progress {
+.main .data-table .progress {
 	margin-bottom: 0;
 	z-index: 0;
 }
 
-.main table.data-table .btn-primary, 
-.main table.data-table .well {
+.main .data-table .btn-primary, 
+.main .data-table .well {
 	background; position: absolute;
 	right: 0;
 	text-align: left;
 	top: 0;
 }
 
-.main table.data-table .btn-primary {
+.main .data-table .btn-primary {
 	z-index: 2;
 }
 
-.main table.data-table .well {
+.main .data-table .well {
 	background: #ffc;
 	border: none;
 	border-radius: 0;
@@ -419,7 +443,7 @@ body {
 	font-weight: bold;
 }
 .sidebar .panel h3.panel-title {
-	margin: 0;
+	margin: 0; /* resets margins from page standard */
 }
 .sidebar .panel .list-group-item.up {
 	background: rgba(102,153,51,0.2);
