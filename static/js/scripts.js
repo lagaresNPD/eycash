@@ -22,9 +22,6 @@ $('.highlightable-column th').click(function() {
     }
 });
 
-/* initialize editable table */
-$('.editable-table').editableTableWidget();
-
 /* number cells in a top-5 table */
 // $(document).ready(function(){
 // 	$('.top5-table tr').each(function(tr_index){

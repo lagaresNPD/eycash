@@ -6,14 +6,6 @@
 	top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.abs-center.is-responsive {
-	width: 50%; 
-	height: 50%;
-	min-width: 300px;
-	max-width: 500px;
-	padding: 40px;
-}			
-
 .btn {
 	border-radius: 0;
 }
@@ -139,7 +131,7 @@ body {
 }
 
 .mainnav > .list-group .list-group-item {
-	width: 66%;
+	/*width: 66%;*/
 }
 
 .mainnav > .list-group .list-group-item a {
