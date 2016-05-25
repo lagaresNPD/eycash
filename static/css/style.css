@@ -25,8 +25,7 @@ iframe, embed, object {
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	/*max-width: 960px;*/
-	overflow-x: hidden;
-}	
+}
 .user-options {
 	background: rgba(0,0,0,0.7);
 	border-radius: 0;
@@ -211,12 +210,13 @@ body {
 	margin: 2.5rem 0 2.5rem 1.5rem;
 }
 .main .col {
-	padding-left: 0.25rem;
-	padding-right: 0.25rem;
+/*	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+*/
 }
 .main .panel {
 	border-radius: 0;
-	margin: 0 0 0.5rem;
+	margin: 0 -0.5rem 1.5rem;
 }
 .main .panel-title {
 	font-size: 100%;
@@ -440,9 +440,9 @@ body {
 	margin-top: 3rem;
 }
 .landing-page .main .col {
-	padding-left: .25rem;
+/*	padding-left: .25rem;
 	padding-right: .25rem;
-}
+*/}
 .landing-page .content-card {
 	min-height: 20rem;
 	padding: 1.5rem;
