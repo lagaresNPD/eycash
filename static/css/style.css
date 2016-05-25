@@ -25,6 +25,7 @@ iframe, embed, object {
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	/*max-width: 960px;*/
+	overflow-x: hidden;
 }	
 .user-options {
 	background: rgba(0,0,0,0.7);
@@ -193,7 +194,7 @@ body {
 
 
 /* this is the row that houses each page's main content */
-.main .row {
+.main > .row {
 	margin-left: -0.25rem;
 	margin-right: -0.25rem;
 }

@@ -7,7 +7,9 @@ body {
 	margin: 0 auto;
 	max-width: none;
 }
-
+.row {
+	margin: 0;
+}
 .abs-center.is-responsive {
 	width: 50%; 
 	height: 50%;
