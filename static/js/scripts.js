@@ -22,6 +22,13 @@ $('.highlightable-column th').click(function() {
     }
 });
 
+/* set filters label to name of selected link */
+$('.filters .btn-group a').click( function () {
+    var dd_result = $(this).text();
+    var dd_id = $(this).parent().parent().attr('data-id');
+    $('#' + dd_id).text(dd_result);
+});
+
 /* number cells in a top-5 table */
 // $(document).ready(function(){
 // 	$('.top5-table tr').each(function(tr_index){

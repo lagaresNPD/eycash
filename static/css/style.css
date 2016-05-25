@@ -234,6 +234,17 @@ body {
 	position: relative;
 	left: 150px;
 */}
+.main .data-table th:first-child {
+	background: #fff;
+	color: #333;
+	max-width: 200px;
+	text-align: left;
+}
+.main .data-table th:last-child {
+	background: #000;
+	color: #fff;
+	text-align: left;
+}
 .main .data-table td {
 	position: relative;
 	text-align: right;
@@ -257,10 +268,17 @@ body {
 	font-style: italic;
 }
 .main .data-table.first-column th {
-	background: #fff;
+	/*background: #fff;*/
 	color: #333;
 	font-weight: 400;
 }
+/*.table-striped.first-column>tbody>tr:nth-of-type(even) {
+    background-color: #fff;
+}
+.table-striped.first-column>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+*/
 #promoCal .fwidth {
 	/*width: 100px !important;*/
 }
