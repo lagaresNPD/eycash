@@ -98,7 +98,6 @@ body {
 .mainnav > .list-group {
 	background: rgba(0,0,0,0.8);
 }
-
 .mainnav .list-group-item, 
 .mainnav .list-group-item .btn-submenu {
 	background: transparent;
@@ -129,18 +128,15 @@ body {
 	padding-top: 1rem;
 	width: 100%;
 }
-
 .mainnav > .list-group .list-group-item {
 	/*width: 66%;*/
 }
-
 .mainnav > .list-group .list-group-item a {
 	color: #fff;
 }
 .mainnav .list-group-item a:hover {
 	text-decoration: none;
 }
-
 .mainnav .list-group .list-group .list-group-item {
 	color: #333;
 	font-size: 1.75rem;
@@ -172,14 +168,12 @@ body {
 	/*position: absolute;*/
 	margin-bottom: -48px;
 }
-
 .filters .btn-custom {
 	background: #ffe600;
 	border: 1px solid rgba(0,0,0,0.3);
 	border-width: 1px 1px 1px 0;
 	text-align: left;
 }
-
 .filters .btn-custom:first-child {
 	border-left: 1px;
 }
@@ -191,7 +185,6 @@ body {
 .filters .btn-custom .caret {
 	float: right;
 }
-
 .filters.btn-group.open .dropdown-toggle {
 	box-shadow: none;
 	width: 100%;
@@ -220,17 +213,14 @@ body {
 	padding-left: 0.25rem;
 	padding-right: 0.25rem;
 }
-
 .main .panel {
 	border-radius: 0;
 	margin: 0 0 0.5rem;
 }
-
 .main .panel-title {
 	font-size: 100%;
 	font-weight: 700;
 }
-
 .main .btn-block {
 	border: 1rem solid transparent;
 	color: #fff;
@@ -243,7 +233,6 @@ body {
 	position: relative;
 	left: 150px;
 */}
-
 .main .data-table td {
 	position: relative;
 	text-align: right;
@@ -254,7 +243,6 @@ body {
 .main .data-table.editable-table p {
 	white-space: normal;
 }
-
 .main .data-table th p {
 	margin: 0;
 	padding: 0;
@@ -267,28 +255,23 @@ body {
 	color: #999;
 	font-style: italic;
 }
-
 .main .data-table.first-column th {
 	background: #fff;
 	color: #333;
 	font-weight: 400;
 }
-
 #promoCal .fwidth {
 	/*width: 100px !important;*/
 }
-
 #promoCal th.week {
 	width: 50px;
 }
 #promoCal td {
 	text-align: left;
 }
-
 #promoCal td[colspan="52"] {
 	padding: 0;
 }
-
 #promoCal table {
 	background: rgba(255,255,102,0.5);
 }
@@ -340,12 +323,10 @@ body {
 .main .data-table .gradeF {
 	background-color: rgba(204,0,0,0.4);
 }
-
 .main .data-table thead th.highlight {
 	background: #ffe600;
 	color: #000;
 }
-
 .main table.data-table td.highlight {
 	background: rgba(255,255,102,0.5);
 }
@@ -374,7 +355,6 @@ body {
 	margin-bottom: 0;
 	z-index: 0;
 }
-
 .main .data-table .btn-primary, 
 .main .data-table .well {
 	background; position: absolute;
@@ -382,11 +362,9 @@ body {
 	text-align: left;
 	top: 0;
 }
-
 .main .data-table .btn-primary {
 	z-index: 2;
 }
-
 .main .data-table .well {
 	background: #ffc;
 	border: none;
@@ -409,11 +387,9 @@ body {
     background-color: #ffe600;
 	border-radius: 0;
 }
-
 .sidebar .panel .panel-title .fa {
 	opacity: 0.5;
 }
-
 .sidebar .panel .panel-body {
 	padding: 0;
 }
@@ -447,13 +423,40 @@ body {
 }
 
 
-
 /* global footer */
 .footer {
 	border-top: 1px solid #ddd;
 	padding: 1rem 0 0 0;
 }
-
 .footer .text-muted {
 	font-size: 75%;
+}
+
+
+/* landing page-specific */
+.landing-page .main .row {
+	border-top: 1px solid #eee;
+	margin-top: 3rem;
+}
+.landing-page .main .col {
+	padding-left: .25rem;
+	padding-right: .25rem;
+}
+.landing-page .content-card {
+	min-height: 20rem;
+	padding: 1.5rem;
+	position: relative;
+}
+.landing-page .content-card h4 {
+	font-weight: 700;
+}
+.landing-page .content-card ul {
+	margin-top: 2rem;
+}
+.landing-page .content-card li {
+	font-size: 1.3rem;
+}
+.landing-page .content-card li .fa-chevron-right {
+	position: relative;
+	top: 3px;
 }
