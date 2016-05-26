@@ -357,6 +357,9 @@ body {
 	padding: 0.5rem 0 0.5rem 1.5rem;
 	width: 2rem;
 }
+.main .top5-table td:last-child {
+	/* the horizontal bars/graphics */
+}
 
 
 /* highlighted cells */

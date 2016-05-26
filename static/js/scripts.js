@@ -45,6 +45,15 @@ $('#date-to').click( function () {
     $('#dateRangePicker').collapse('hide');
 });
 
+
+/* Animate scrolldown in trade promo page */
+$('.tpo .nav-pills a').click( function () {
+    var hash = '#tables';
+    $('html, body').animate({
+        'scrollTop': $('#tables').offset().top
+    }, 1000);
+});
+
 /* number cells in a top-5 table */
 // $(document).ready(function(){
 // 	$('.top5-table tr').each(function(tr_index){
