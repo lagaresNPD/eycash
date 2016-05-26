@@ -26,7 +26,23 @@ $('.highlightable-column th').click(function() {
 $('.filters .btn-group a').click( function () {
     var dd_result = $(this).text();
     var dd_id = $(this).parent().parent().attr('data-id');
+    // var dd_id = $(this).closest('button span[id]').attr('id');
+    // console.log($(dd_id));
+
     $('#' + dd_id).text(dd_result);
+});
+
+/* highlight date in mini calendar */
+$('.filters .mini-calendar tbody td').click( function () {
+    var calId = $(this).closest('table').attr('id');
+    $('#' + calId + ' td').removeClass('active');
+    $(this).toggleClass('active');
+});
+
+/* listen for date range picked to update the view and collapse the dropdown */
+$('#date-to').click( function () {
+    alert('Date Range Selected - update the view!');
+    $('#dateRangePicker').collapse('hide');
 });
 
 /* number cells in a top-5 table */
