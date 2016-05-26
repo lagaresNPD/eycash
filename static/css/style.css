@@ -277,7 +277,7 @@ body {
 .main .data-table th:last-child {
 	background: #000;
 	color: #fff;
-	text-align: left;
+	/*text-align: left;*/
 }
 .main .data-table td {
 	position: relative;
