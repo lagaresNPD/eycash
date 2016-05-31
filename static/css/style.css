@@ -489,33 +489,7 @@ body {
 }
 
 
-/* landing page-specific */
-.landing-page .main .row {
-	border-top: 1px solid #eee;
-	margin-top: 3rem;
-}
-.landing-page .main .col {
-/*	padding-left: .25rem;
-	padding-right: .25rem;
-*/}
-.landing-page .content-card {
-	min-height: 20rem;
-	padding: 1.5rem;
-	position: relative;
-}
-.landing-page .content-card h4 {
-	font-weight: 700;
-}
-.landing-page .content-card ul {
-	margin-top: 2rem;
-}
-.landing-page .content-card li {
-	font-size: 1.3rem;
-}
-.landing-page .content-card li .fa-chevron-right {
-	position: relative;
-	top: 3px;
-}
+
 
 /* customize carousel controls */
 .carousel-control .glyphicon-chevron-left {
