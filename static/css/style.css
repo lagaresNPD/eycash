@@ -431,6 +431,20 @@ body {
 	z-index: 1;
 }
 
+.main.container-fluid {
+	position: relative;
+}
+
+.main .report {
+	-webkit-transition: opacity 2s ease-in-out;
+	transition: opacity 2s ease-in-out;
+	opacity: 1;
+	/*position: absolute;*/
+}
+.main .report.fadeout {
+	opacity: 0;
+}
+
 
 /* this is the 'alerts' sidebar */
 .sidebar .panel {

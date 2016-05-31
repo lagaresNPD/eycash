@@ -41,7 +41,10 @@ $('.filters .mini-calendar tbody td').click( function () {
 
 /* listen for date range picked to update the view and collapse the dropdown */
 $('#date-to').click( function () {
-    alert('Date Range Selected - update the view!');
+    // alert('Date Range Selected - update the view!');
+    $('.report').toggleClass('hidden');
+    // $('.report').toggleClass('fadeout', function() {
+    // });
     $('#dateRangePicker').collapse('hide');
 });
 
