@@ -144,9 +144,11 @@ body {
 }
 
 /* this is where the title of each page resides */
-.jumbotron {
+.jumbotron, .container .jumbotron, .container-fluid .jumbotron {
 	background-color: #ffe600;
 	border-bottom: 3px solid #999;
+	border-radius: 0;
+	padding: 2rem 0 0 0;
 }
 .jumbotron h1 {
 	font-size: 300%;
@@ -535,6 +537,16 @@ body {
 }
 
 @media only screen and (max-width: 530px) {
+
+	.jumbotron h1 {
+		font-size: 250%;
+	}
+
+	.mainnav .list-group-item, 
+	.mainnav .list-group-item .btn-submenu {
+		font-size: 2rem;
+	}
+
 
 	#dateRangePicker {
 		width: 320px;

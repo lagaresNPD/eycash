@@ -64,6 +64,13 @@ $('#carousel').carousel({
 })
 
 
+/* offcanvas.js */
+$(document).ready(function () {
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
+
 /* number cells in a top-5 table */
 // $(document).ready(function(){
 // 	$('.top5-table tr').each(function(tr_index){
