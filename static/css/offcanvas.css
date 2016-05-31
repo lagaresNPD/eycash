@@ -65,6 +65,7 @@ footer {
   .sidebar-offcanvas h3 {
     background: #ccc;
     color: #fff;
+    margin: 0;
     padding: 1rem 1.5rem;
   }
   .sidebar-offcanvas a {

@@ -15,8 +15,8 @@ $('.highlightable-column th').click(function() {
                 $(this).find('td').eq(th_index -1).removeClass('highlight');
             } else {
                 $(this).find('td').removeClass('highlight');
-                $(this).find('th').eq(th_index).addClass('highlight');
-                $(this).find('td').eq(th_index -1).toggleClass('highlight');
+                // $(this).find('th').eq(th_index).addClass('highlight');
+                $(this).find('td').eq(th_index).toggleClass('highlight');
             }
         });
     }
@@ -50,12 +50,12 @@ $('#date-to').click( function () {
 
 
 /* Animate scrolldown in trade promo page */
-$('.tpo .nav-pills a').click( function () {
-    var hash = '#tables';
-    $('html, body').animate({
-        'scrollTop': $('#tables').offset().top
-    }, 1000);
-});
+// $('.tpo .nav-pills a').click( function () {
+//     var hash = '#tables';
+//     $('html, body').animate({
+//         'scrollTop': $('#tables').offset().top
+//     }, 1000);
+// });
 
 
 /* increase delay from default 2000ms */
