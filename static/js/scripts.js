@@ -54,6 +54,13 @@ $('.tpo .nav-pills a').click( function () {
     }, 1000);
 });
 
+
+/* increase delay from default 2000ms */
+$('#carousel').carousel({
+  interval: 5000
+})
+
+
 /* number cells in a top-5 table */
 // $(document).ready(function(){
 // 	$('.top5-table tr').each(function(tr_index){

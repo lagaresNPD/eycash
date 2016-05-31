@@ -517,6 +517,35 @@ body {
 	top: 3px;
 }
 
+/* customize carousel controls */
+.carousel-control .glyphicon-chevron-left {
+    left: 20%;
+}
+
+.carousel-control .glyphicon-chevron-right {
+    right: 20%;
+}
+
+/*@media screen and (min-width: 768px)
+{
+*/
+.carousel-indicators {
+    bottom: -10px;
+}
+/*}*/
+
+.carousel-caption {
+	bottom: auto;
+	left: 7%;
+	top: 20px;
+	text-align: left;
+	width: 33%;
+}
+
+.carousel-caption h3 {
+	margin-left: 0;
+}
+
 @media only screen and (max-width: 530px) {
 
 	#dateRangePicker {
