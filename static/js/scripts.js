@@ -16,7 +16,7 @@ $('.highlightable-column th').click(function() {
             } else {
                 $(this).find('td').removeClass('highlight');
                 // $(this).find('th').eq(th_index).addClass('highlight');
-                $(this).find('td').eq(th_index).toggleClass('highlight');
+                $(this).find('td').eq(th_index -1).toggleClass('highlight');
             }
         });
     }
