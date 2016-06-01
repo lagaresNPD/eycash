@@ -1,0 +1,96 @@
+/* landing page only */
+
+.panel-group {
+	border-top: 1px solid #eee;
+	margin-top: 3rem;
+}
+.main .panel-group h3 {
+	margin-top: 1rem;
+}
+.panel {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	border: none;
+	box-shadow: 0 0.5rem .2rem rgba(0,0,0,0.2);
+	min-height: 30rem;
+	padding: 5rem 2.25rem 0;
+	position: relative;
+}
+.panel .panel-caption {
+	height: 18rem; /* do not exceed this height w/ content, else the caption will invade the yellow bottom thingy. */
+}
+
+.panel h4 {
+	font-weight: 700;
+}
+.panel ul {
+	margin: 0 -2.25rem;
+}
+.panel li {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	font-size: 1.3rem;
+	padding: 1rem 2.25rem;
+}
+.panel li a {
+	font-weight: 700;
+}
+.panel li:first-child {
+	border-top: none;
+}
+.panel li:last-child {
+	border-bottom: none;
+}
+.panel li .fa-chevron-right {
+	position: relative;
+	top: 3px;
+}
+
+.panel-ey {
+	background-color: #efefef;
+	background-image: url(../images/bg_EY-01.png);
+}
+.panel-ey ul {
+	background-color: #ffe600;
+	background-image: url(../images/bg_EY-01.png);
+	background-position: 0 -22rem;
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 2rem 0;
+}
+
+
+.panel-client {
+	background-image: url(../images/bg_client-01.png);
+	background-size: cover;
+	color: #fff;
+}
+.panel-client a {
+	color: #fff;
+}
+.panel-other1 {
+	background-image: url(../images/bg_fakeMS-01.png);
+	background-size: cover;
+	color: #fff;
+}
+.panel-other1 a, .panel-other2 a, .panel-other3 a {
+	color: #fff;
+}
+.panel-other2 {
+	background-size: cover;
+	background-image: url(../images/bg_fakeOracle-01.png);
+}
+.panel-other3 {
+	background-image: url(../images/bg_fakeSAP-01.png);
+	background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+
+.panel-ey ul {
+	background-position: 0 -50rem;
+	background-size: 100% auto;
+	padding: 3rem 0 0;
+}
+
