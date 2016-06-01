@@ -41,13 +41,24 @@ $('.filters .mini-calendar tbody td').click( function () {
 
 /* listen for date range picked to update the view and collapse the dropdown */
 $('#date-to').click( function () {
-    // alert('Date Range Selected - update the view!');
     $('.report').toggleClass('hidden');
     // $('.report').toggleClass('fadeout', function() {
     // });
     $('#dateRangePicker').collapse('hide');
 });
 
+/* listen for PPG picked to update the view and collapse the dropdown */
+$('#ppg a').click( function () {
+    $('.report').toggleClass('hidden');
+});
+
+
+/* Swap tables on iframe click */
+window.addEventListener('blur',function(){
+    if(document.activeElement.id == 'iframe'){
+        $('.sidebar .insights').toggleClass('hidden');    
+    }
+});
 
 /* Animate scrolldown in trade promo page */
 // $('.tpo .nav-pills a').click( function () {
@@ -62,6 +73,22 @@ $('#date-to').click( function () {
 $('#carousel').carousel({
   interval: 5000
 })
+
+
+/* fix promo calendar heights on open/close */
+$('.collapse').on('show.bs.collapse', function() {
+    $(this).closest('td').find('.progress').css({
+        'height':'120px',
+        'background-color':'#ffe600'
+    });
+});
+
+$('.collapse').on('hide.bs.collapse', function() {
+    $(this).closest('td').find('.progress').css({
+        'height':'20px',
+        'background-color':'#337ab7'
+    });
+});
 
 
 /* offcanvas.js */
