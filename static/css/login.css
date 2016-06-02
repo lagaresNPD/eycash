@@ -1,4 +1,7 @@
 /* login page */
+html, body {
+	height: 100%;
+}
 
 body {
 	background: #ffe600 url(../images/EYCash_splashBG-01.jpg) no-repeat;
@@ -14,6 +17,10 @@ body {
 	min-width: 300px;
 	max-width: 100%;
 	padding: 40px;
+}
+
+.main.container-fluid {
+    height: 100%;
 }
 
 .nav-tabs {

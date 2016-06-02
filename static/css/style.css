@@ -258,6 +258,12 @@ body {
 	font-size: 100%;
 	font-weight: 700;
 }
+
+/* insights titles get a bigger font-size */
+.main .well .panel-title {
+	font-size: 200%;
+}
+
 .main .btn-block {
 	border: 1rem solid transparent;
 	color: #fff;
@@ -322,7 +328,7 @@ body {
 }
 */
 #promoCal .fwidth {
-	/*width: 100px !important;*/
+	width: 150px !important;
 }
 #promoCal th.week {
 	width: 50px;
@@ -419,6 +425,7 @@ body {
 
 /* progress bars/ gantt chart bars */
 .main .data-table .progress {
+	border-radius: 0;
 	margin-bottom: 0;
 	z-index: 0;
 }
@@ -447,16 +454,18 @@ body {
 }
 
 .main .report {
-	-webkit-transition: opacity 2s ease-in-out;
-	transition: opacity 2s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	opacity: 1;
-	/*position: absolute;*/
 }
 .main .report.fadeout {
 	opacity: 0;
 }
 
-
+/*.main .table-responsive {
+	clear: both;
+}
+*/
 /* this is the 'alerts' sidebar */
 .sidebar .panel {
 	border: none;
@@ -545,6 +554,29 @@ body {
 	margin-left: 0;
 }
 
+/* overrides to Grid.css to suit EYCASH style */
+.g_HR {
+	/* Grid header cell */
+	border-color : #ccc !important;
+	background-color : #000;
+	color : #fff !important;
+}
+.g_C {
+	/* Grid cell (all) */
+	color : #333;
+	height : 2.5rem;
+	line-height : 2.5rem;
+	text-align: right;
+}
+.g_HeadFixed .g_C:first-child {
+	background-color: #fff !important;
+	color: #333 !important;
+}
+.g_Cl.g_Cl0.g_FCl .g_C {
+	text-align: left;
+}
+
+
 @media only screen and (max-width: 530px) {
 
 	.jumbotron h1 {
@@ -561,4 +593,13 @@ body {
 		width: 320px;
 	}
 
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+		margin-left: -30px;
+	}	
+	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+		margin-right: -30px;
+	}
 }
