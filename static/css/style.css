@@ -554,27 +554,34 @@ body {
 	margin-left: 0;
 }
 
-/* overrides to Grid.css to suit EYCASH style */
-.g_HR {
-	/* Grid header cell */
-	border-color : #ccc !important;
-	background-color : #000;
-	color : #fff !important;
+/* overrides to fixed-table CSS to suit EYCASH style */
+.ft_container table tr th, .ft_container table tr td {
+	background: transparent;
+	padding: 6px 8px;
 }
-.g_C {
-	/* Grid cell (all) */
-	color : #333;
-	height : 2.5rem;
-	line-height : 2.5rem;
-	text-align: right;
+.ft_container table tr th {
+	background: #000; 
+	color: #fff;
+	text-align: center !important;
 }
-.g_HeadFixed .g_C:first-child {
-	background-color: #fff !important;
-	color: #333 !important;
+.ft_container table tr th:first-child {
+	background: #fff; 
+	color: #333;
+	text-align: left !important;
 }
-.g_Cl.g_Cl0.g_FCl .g_C {
-	text-align: left;
+.ft_container table tr th.inverse {
+	background: #000;
+	color: #fff;
+	text-align: center !important;
 }
+
+.ft_container table tr:nth-of-type(even) {
+    background-color: #fff;
+}
+.ft_container table tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
 
 
 @media only screen and (max-width: 530px) {
