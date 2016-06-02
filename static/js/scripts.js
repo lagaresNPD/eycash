@@ -26,13 +26,11 @@ $('.highlightable-column th').click(function() {
 $('.filters .btn-group a').click( function () {
 	var dd_result = $(this).text();
 	var dd_id = $(this).parent().parent().attr('data-id');
-	// var dd_id = $(this).closest('button span[id]').attr('id');
-	// console.log($(dd_id));
-
 	$('#' + dd_id).text(dd_result);
 });
 
-/* hides all but the first two options in the PPG dropdown whenever "Chips" is selected in Category */
+/* 	hides all but the first two options in the PPG dropdown when
+ 	the first option in Category, "Chips," is selected  */
 var category_opts = $('.filters .dropdown-menu[data-id=result2] li');
 var ppg_opts = $('.filters .dropdown-menu[data-id=result5] li');
 $(category_opts).click( function () {
@@ -109,6 +107,129 @@ $(document).ready(function () {
 	$('.row-offcanvas').toggleClass('active')
   });
 });
+
+/* grid.js initialization - freezes rows/columns in big tables */
+// new Grid("table1", {
+// 	srcType						: "dom", 
+// 	srcData						: "table1Itself", 
+// 	allowGridResize				: false, 
+// 	allowColumnResize			: false, 
+// 	allowClientSideSorting		: false, 
+// 	allowSelections				: true, 
+// 	allowMultipleSelections		: true, 
+// 	showSelectionColumn			: false, 
+// 	fixedCols					: 1,
+// 	supportMultipleGridsInView	: true
+// });
+
+/* fixed-table init */
+$('#table1Itself').fxdHdrCol({
+		fixedCols:  1,
+		width:     "100%",
+		height:    "auto",
+		colModal: [
+			   { width: 75, align: 'left' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' },
+			   { width: 75, align: 'right' }
+		],
+		sort: false
+	});
 
 /* number cells in a top-5 table */
 // $(document).ready(function(){

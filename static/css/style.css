@@ -255,9 +255,15 @@ body {
 	margin: 0 -0.5rem 1.5rem;
 }
 .main .panel-title {
-	font-size: 200%;
+	font-size: 100%;
 	font-weight: 700;
 }
+
+/* insights titles get a bigger font-size */
+.main .well .panel-title {
+	font-size: 200%;
+}
+
 .main .btn-block {
 	border: 1rem solid transparent;
 	color: #fff;
@@ -547,6 +553,29 @@ body {
 .carousel-caption h3 {
 	margin-left: 0;
 }
+
+/* overrides to Grid.css to suit EYCASH style */
+.g_HR {
+	/* Grid header cell */
+	border-color : #ccc !important;
+	background-color : #000;
+	color : #fff !important;
+}
+.g_C {
+	/* Grid cell (all) */
+	color : #333;
+	height : 2.5rem;
+	line-height : 2.5rem;
+	text-align: right;
+}
+.g_HeadFixed .g_C:first-child {
+	background-color: #fff !important;
+	color: #333 !important;
+}
+.g_Cl.g_Cl0.g_FCl .g_C {
+	text-align: left;
+}
+
 
 @media only screen and (max-width: 530px) {
 
