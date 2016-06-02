@@ -126,7 +126,7 @@ $(document).ready(function () {
 $('#table1Itself').fxdHdrCol({
 		fixedCols:  1,
 		width:     "100%",
-		height:    "auto",
+		height:    100,
 		colModal: [
 			   { width: 75, align: 'left' },
 			   { width: 75, align: 'right' },
