@@ -65,7 +65,12 @@ $('#date-to').click( function () {
 	$('.report').toggleClass('hidden');
 	// $('.report').toggleClass('fadeout', function() {
 	// });
+
+	$('.picked-date').toggleClass('hidden');
+
 	$('#dateRangePicker').collapse('hide');
+
+	
 });
 
 /* listen for PPG picked to update the view and collapse the dropdown */
