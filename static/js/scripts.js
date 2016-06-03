@@ -22,6 +22,17 @@
 // 	}
 // });
 
+// $('.pd_chart .img-responsive').hover( function() {
+// 	$('.pd_chart .img-resposive').toggleClass('hidden');
+// })
+
+$("#imgSwap").hover(function(){
+	$(this).attr('src','images/EYCash_chart2mouseover.png');
+}, 
+	function(){
+	$(this).attr('src','images/EYCash_chart2.png');
+});
+
 /* set filters label to name of selected link */
 $('.filters .btn-group a').click( function () {
 	var dd_result = $(this).text();
@@ -86,22 +97,22 @@ $('#carousel').carousel({
 })
 
 /* fix promo calendar heights on open/close */
-$('.collapse').on('show.bs.collapse', function() {
-	$(this).closest('td').find('.progress').css({
-		'height':'120px',
-		'background-color':'#ffe600'
-	});
-});
+// $('.collapse').on('show.bs.collapse', function() {
+// 	$(this).closest('td').find('.progress').css({
+// 		'height':'120px',
+// 		'background-color':'#ffe600'
+// 	});
+// });
 
-$('.collapse').on('hide.bs.collapse', function() {
-	$(this).closest('td').find('.progress').css({
-		'height':'20px',
-		'background-color':'#337ab7'
-	});
-});
+// $('.collapse').on('hide.bs.collapse', function() {
+// 	$(this).closest('td').find('.progress').css({
+// 		'height':'20px',
+// 		'background-color':'#337ab7'
+// 	});
+// });
 
-$('a.reveal').click(function() {
-	$('ul').toggleClass('hidden');
+$('#promoCal a.reveal').click(function() {
+	$('#promoCal ul').toggleClass('hidden');
 	$(this).toggleClass('rotate');
 	var thisRow = $(this).parent().parent().parent().find('td');
 	if($(this).hasClass('rotate')) { // the cell is expanded
