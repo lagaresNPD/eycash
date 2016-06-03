@@ -14,11 +14,12 @@
 	border: none;
 	box-shadow: 0 0.5rem .2rem rgba(0,0,0,0.2);
 	min-height: 30rem;
-	padding: 5rem 2.25rem 0;
+	padding: 2.25rem 2.25rem 0;
 	position: relative;
 }
 .panel .panel-caption {
-	height: 18rem; /* do not exceed this height w/ content, else the caption will invade the yellow bottom thingy. */
+	margin-top: 6rem;
+	min-height: 17rem;
 }
 
 .panel h4 {
@@ -49,15 +50,17 @@
 
 .panel-ey {
 	background-color: #efefef;
-	background-image: url(../images/bg_EY-01.png);
 }
+.panel-ey .panel-caption {
+	margin-top: 0;
+}
+
 .panel-ey ul {
 	background-color: #ffe600;
-	background-image: url(../images/bg_EY-01.png);
-	background-position: 0 -22rem;
+	background-image: url(../images/bg_EY-01_slant.png);
 	background-repeat: no-repeat;
-	background-size: auto;
-	padding: 2rem 0;
+	background-size: 100% auto;
+	padding: 3rem 0;
 }
 
 
