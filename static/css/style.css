@@ -351,9 +351,16 @@ body {
 #promoCal .progress ul {
 	background: #ffe600;
 	color: #333;
-	padding: 1rem;
+	padding: 2.5rem 1rem;
 	text-align: left;
 }
+
+#promoCal li, #promoCal .progress li {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 2;
+}
+
 
 .main .data-table {
 	margin-bottom: 0;

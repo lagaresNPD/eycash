@@ -103,7 +103,7 @@ $('.collapse').on('hide.bs.collapse', function() {
 $('a.reveal').click(function() {
 	$('ul').toggleClass('hidden');
 	$(this).toggleClass('rotate');
-	var thisRow = $(this).parent().parent().find('td');
+	var thisRow = $(this).parent().parent().parent().find('td');
 	if($(this).hasClass('rotate')) { // the cell is expanded
 		$('#expandableCell .progress').css('height','100%');
 		$(thisRow).eq(0).css('background-color', '#ffe600');
