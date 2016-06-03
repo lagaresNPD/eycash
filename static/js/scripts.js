@@ -254,7 +254,38 @@ $('#PriceDiagnosticFreezeTable').fxdHdrCol({
 });
 
 
-$('#tpoScoreCard').fxdHdrCol({
+$('#tpoScoreCardEmpty').fxdHdrCol({
+	fixedCols:  1,
+	width:     "100%",
+	height:    500,
+	// 21 columns
+	colModal: [
+		{ width: 270, align: 'left' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' }
+	],
+	sort: false
+});
+
+$('#tpoScoreCardFilled').fxdHdrCol({
 	fixedCols:  1,
 	width:     "100%",
 	height:    500,
