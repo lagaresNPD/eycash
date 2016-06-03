@@ -74,8 +74,6 @@
 
 		<div class="container-fluid">
 			
-				<!-- <div class="col-xs-12 col-sm-9"></div> -->
-
 			<div class="row row-offcanvas row-offcanvas-right">
 
 				<!-- section title area -->
@@ -89,7 +87,7 @@
 					</div>
 					<div class="btn-group btn-group-justified filtersbtn-group btn-group-justified filters hidden-xs">
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">USA </b><span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">- Select One -</b><span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result1">
 								<li><a href="#">USA</a></li>
@@ -105,7 +103,7 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">Chips</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result2">
 								<li><a id="chips" href="#">Chips</a></li>
@@ -117,17 +115,17 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">Grocery</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result3">
 								<li><a href="#">Grocery</a></li>
-								<li><a href="#">Drug</a></li>
-								<li><a href="#">Mass Channel</a></li>
+								<!--li><a href="#">Drug</a></li>
+								<li><a href="#">Mass Channel</a></li-->
 							</ul>
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">Bop &amp; Shop</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result4">
 								<li><a href="#">Bop &amp; Shop</a></li>
@@ -137,20 +135,21 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">Chips Baked 16 oz</b><span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">- Select One -</b><span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result5">
 								<li><a href="#">Chips Baked 16 oz</a></li>
 								<li><a href="#">Chips Roasted 20 oz</a></li>
-								<li><a href="#">Fruit Mix Drink 25 oz</a></li>
+								<li><a href="#">Chips Family Size 25 oz</a></li>
+								<!--li><a href="#">Fruit Mix Drink 25 oz</a></li>
 								<li><a href="#">Cookie Family Size 45 oz</a></li>
 								<li><a href="#">Chocolate Bar 15 oz</a></li>
-								<li><a href="#">Chocolate Crispy 16 oz </a></li>
+								<li><a href="#">Chocolate Crispy 16 oz </a></li-->
 							</ul>
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="collapse" data-target="#dateRangePicker" aria-expanded="false" aria-controls="dateRangePicker"><span class="small">Date Range Selector</span>-<span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="collapse" data-target="#dateRangePicker" aria-expanded="false" aria-controls="dateRangePicker"><span class="small">Date Range Selector</span>01/01/2014 - 06/05/2016<span class="caret"></span>
 							</button>
 							<div class="collapse" id="dateRangePicker">
 								<table class="table table-bordered table-compact mini-calendar" id="date-from">
@@ -184,7 +183,7 @@
 								<table class="table table-bordered table-compact mini-calendar" id="date-to">
 									<thead>
 									<tr>
-									<th colspan="7">June 2015</th>
+									<th colspan="7">Dec 2015</th>
 									</tr>
 									<tr>
 									<td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
@@ -204,7 +203,7 @@
 									<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
 									</tr>
 									<tr>
-									<td>29</td><td>30</td>
+									<td>29</td><td>30</td><td>31</td>
 									</tr>
 									</tbody>
 								</table>
@@ -217,40 +216,52 @@
 				</div>
 
 				<div class="main container-fluid">
-  					<div class="report">
+					<div class="report">
 						<div class="row">
-							<h2> REPORT 1</h2>
 							<div class="col col-sm-9">
 								<div class="panel panel-default content-card">
-									<!-- <img class="img-responsive" src="images/cim.png" alt="Competition In Market"> -->
-									<iframe width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDYwODM2YzUtMDA4Yy00YmVlLWE1ZGEtMjFjNTg2OTQ5MTllIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>			 					
+									<img class="img-responsive" src="images/EYCash_chart1.png">
+									<!--iframe width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZDYwODM2YzUtMDA4Yy00YmVlLWE1ZGEtMjFjNTg2OTQ5MTllIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe-->			 					
 								</div>
 							</div>
 							<div class="col col-sm-3">
 								<div class="well panel panel-default content-card ">
-										<h4 class="panel-title">Insight Header Lorem Ipsum Dolor Sit Ahmet</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, erat rhoncus feugiat accumsan, purus metus commodo risus, a rhoncus magna erat sit amet erat.</p>
+										<h1 class="panel-title">Price Diagnostic Key Insights</h1>
+										<p> </p>
+										<ul>
+										<li>Make better pricing decisions by evaluating key financal metrics.</li>
+										<li>Assess existing pricing strategies and pricing models.</li> 
+										<li>Measure and review performance.</li>
+										<li>Gain insights for developing future pricing roadmap.</li>
+										<li>Determine current best price settings.</li>
+										</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="report hidden">
 						<div class="row">
-							<h2> REPORT 2</h2>
+							<!--h2> REPORT 2</h2-->
 							<div class="col col-sm-9">
 								<div class="panel panel-default content-card">
-									<img class="img-responsive" src="images/cim.png" alt="Competition In Market">
+									<img class="img-responsive" src="images/EYCash_chart1.png">
 								</div>
 							</div>
 							<div class="col col-sm-3">
 								<div class="well panel panel-default content-card ">
-										<h4 class="panel-title">Insight Header Lorem Ipsum Dolor Sit Ahmet</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ipsa quod vel, veniam fugiat ullam pariatur aliquam aspernatur commodi fugit alias, dicta voluptatum doloremque explicabo numquam dolores voluptatem, vero repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis id rem temporibus, ut sit molestiae explicabo perferendis cupiditate. Dolor totam porro quas quasi blanditiis cupiditate iste voluptatibus molestias nostrum libero.</p>
+									<h1 class="panel-title">Price Diagnostic Key Insights</h1>
+									<p> </p>
+									<ul>
+										<li>Price for Chips Baked 16 oz shows significant volatility over the period of two years.</li>
+										<li>Pricing is lowest durign July 4th season.</li> 
+										<li>Approximately 20% of profits is lost due to Competition.</li>
+										<li>Price point of $2.91 gives the highest profits for Chips Baked 16 oz.</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-						<div class="row">
+					<div class="row">
 							<div class="col col-xs-12">
 								<div class="panel panel-default">
 
