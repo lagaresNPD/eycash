@@ -14,6 +14,7 @@
     outline: none;
 }
 
+
 /* quick way to make iframes responsive to their parent */	
 iframe, embed, object {
 	max-width: 100% !important;
@@ -273,23 +274,7 @@ body {
 
 /* tables styling */
 
-.main .data-table {
-/*	width: auto;
-	position: relative;
-	left: 150px;
-*/}
-/*.main .data-table th:first-child {
-	background: #fff;
-	color: #333;
-	max-width: 200px;
-	text-align: left;
-}
-.main .data-table th:last-child {
-	background: #000;
-	color: #fff;
-	text-align: left;
-}
-*/
+
 .main .data-table td {
 	position: relative;
 	text-align: right;
@@ -302,9 +287,9 @@ body {
 .main .data-table p {
 	white-space: nowrap;
 }
-.main .data-table.editable-table p {
+/*.main .data-table.editable-table p {
 	white-space: normal;
-}
+}*/
 .main .data-table th p {
 	margin: 0;
 	padding: 0;
@@ -322,13 +307,10 @@ body {
 	color: #333;
 	font-weight: 400;
 }
-/*.table-striped.first-column>tbody>tr:nth-of-type(even) {
-    background-color: #fff;
+
+#promoCal table {
+	background: rgba(255,255,102,0.5);
 }
-.table-striped.first-column>tbody>tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
-}
-*/
 #promoCal .fwidth {
 	width: 150px !important;
 }
@@ -340,21 +322,49 @@ body {
 }
 #promoCal td[colspan="52"] {
 	padding: 0;
+	position: relative;
 }
-#promoCal table {
-	background: rgba(255,255,102,0.5);
+#promoCal p {
+	margin: 0;
 }
+.reveal {
+	display: inline-block;
+	transition:All .25s ease;
+	-webkit-transition:All .25s ease;
+	-moz-transition:All .25s ease;
+	-o-transition:All .25s ease;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+}
+
+.reveal.rotate {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+}
+
+#promoCal .progress ul {
+	background: #ffe600;
+	color: #333;
+	padding: 1rem;
+	text-align: left;
+}
+
 .main .data-table {
 	margin-bottom: 0;
 }
 /* first-column table stays put while the responsive-table cells scroll behind it */
-.main .data-table.first-column {
+/*.main .data-table.first-column {
 	position: absolute;
 	left: 0;
 	width: auto;
 	z-index: 9;
-	/*display: none;  for testing */
-}
+}*/
 .main .data-table th.inverse {
 	background: #fff;
 	color: inherit;
@@ -380,9 +390,6 @@ body {
 	font-weight: 700;
 	padding: 0.5rem 0 0.5rem 1.5rem;
 	width: 2rem;
-}
-.main .top5-table td:last-child {
-	/* the horizontal bars/graphics */
 }
 
 
@@ -469,10 +476,7 @@ body {
 	opacity: 0;
 }
 
-/*.main .table-responsive {
-	clear: both;
-}
-*/
+
 /* this is the 'alerts' sidebar */
 .sidebar .panel {
 	border: none;
@@ -601,7 +605,6 @@ body {
 	.mainnav .list-group-item .btn-submenu {
 		font-size: 2rem;
 	}
-
 
 	#dateRangePicker {
 		width: 320px;

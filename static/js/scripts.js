@@ -100,6 +100,21 @@ $('.collapse').on('hide.bs.collapse', function() {
 	});
 });
 
+$('a.reveal').click(function() {
+	$('ul').toggleClass('hidden');
+	$(this).toggleClass('rotate');
+	var thisRow = $(this).parent().parent().find('td');
+	if($(this).hasClass('rotate')) { // the cell is expanded
+		$('#expandableCell .progress').css('height','100%');
+		$(thisRow).eq(0).css('background-color', '#ffe600');
+		$(thisRow).eq(1).css('background-color', '#ffe600');
+	} else  {
+		$('#expandableCell .progress').css('height','20px');
+		$(thisRow).eq(0).css('background-color', '#ffffff');
+		$(thisRow).eq(1).css('background-color', '#ffffff');
+	}
+})
+
 
 /* offcanvas.js */
 $(document).ready(function () {
