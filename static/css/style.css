@@ -201,7 +201,9 @@ body {
 	top: 50px;
 	right: 0;
 	width: 500px;
-	z-index: 9;
+}
+#dateRangePicker, .open>.dropdown-menu {
+	z-index: 1050; /* to raise above freezeable table headers */
 }
 .filters .mini-calendar {
 	border: none;
@@ -367,6 +369,11 @@ body {
 	text-align: center;
 }
 
+/*.main .freezable-table table {
+	max-width: 1400px; 
+	margin: 0 auto;
+}
+*/
 /* top 5 boxes in commercial snapshot */
 .main .top5-table td:first-child {
 	color: #999;

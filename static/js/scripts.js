@@ -1,26 +1,26 @@
 
 /* highlight table column */
-$('.highlightable-column th').click(function() {
+// $('.highlightable-column th').click(function() {
 
-	var th_index = $(this).index();
+// 	var th_index = $(this).index();
 
-	$('.highlightable-column thead th').removeClass('highlight');
-	$('.highlightable-column td').removeClass('highlight');
+// 	$('.highlightable-column thead th').removeClass('highlight');
+// 	$('.highlightable-column td').removeClass('highlight');
 
-   if($(this).index() !== 0) {
-		$(this).addClass('highlight');
-		$('tr').each(function() {
-			if($(this).find('td').eq(th_index -1).hasClass('highlight')){
-				$(this).find('th').eq(th_index -1).removeClass('highlight');
-				$(this).find('td').eq(th_index -1).removeClass('highlight');
-			} else {
-				$(this).find('td').removeClass('highlight');
-				// $(this).find('th').eq(th_index).addClass('highlight');
-				$(this).find('td').eq(th_index -1).toggleClass('highlight');
-			}
-		});
-	}
-});
+//    if($(this).index() !== 0) {
+// 		$(this).addClass('highlight');
+// 		$('tr').each(function() {
+// 			if($(this).find('td').eq(th_index -1).hasClass('highlight')){
+// 				$(this).find('th').eq(th_index -1).removeClass('highlight');
+// 				$(this).find('td').eq(th_index -1).removeClass('highlight');
+// 			} else {
+// 				$(this).find('td').removeClass('highlight');
+// 				// $(this).find('th').eq(th_index).addClass('highlight');
+// 				$(this).find('td').eq(th_index -1).toggleClass('highlight');
+// 			}
+// 		});
+// 	}
+// });
 
 /* set filters label to name of selected link */
 $('.filters .btn-group a').click( function () {
@@ -83,7 +83,6 @@ window.addEventListener('blur',function(){
 $('#carousel').carousel({
   interval: 5000
 })
-
 
 /* fix promo calendar heights on open/close */
 $('.collapse').on('show.bs.collapse', function() {
@@ -258,31 +257,30 @@ $('#tpoScoreCard').fxdHdrCol({
 	height:    500,
 	// 21 columns
 	colModal: [
-	   { width: 300, align: 'left' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' }
+		{ width: 270, align: 'left' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' }
 	],
 	sort: false
 });
-
 
 
 $('#postEventFreezeTable').fxdHdrCol({
@@ -291,27 +289,48 @@ $('#postEventFreezeTable').fxdHdrCol({
 	height:    500,
 	// 21 columns
 	colModal: [
-	   { width: 300, align: 'left' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' },
-	   { width: 100, align: 'right' }
+	   // { width: 320, align: 'left' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' },
+	   // { width: 100, align: 'right' }
+		{ width: 270, align: 'left' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' }
 	],
 	sort: false
 });
