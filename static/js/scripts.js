@@ -1,5 +1,5 @@
 
-/* highlight table column */
+/* highlight table column  - no longer in use because conflict with freeze-pane */
 // $('.highlightable-column th').click(function() {
 
 // 	var th_index = $(this).index();
@@ -70,7 +70,8 @@ window.addEventListener('blur',function(){
 	}
 });
 
-/* Animate scrolldown in trade promo page */
+/* Animate scrolldown in trade promo page 
+- no longer in use because no PBI content anymore on this page  */
 // $('.tpo .nav-pills a').click( function () {
 //     var hash = '#tables';
 //     $('html, body').animate({
@@ -107,25 +108,12 @@ $(document).ready(function () {
   });
 });
 
-/* grid.js initialization - freezes rows/columns in big tables */
-// new Grid("table1", {
-// 	srcType						: "dom", 
-// 	srcData						: "table1Itself", 
-// 	allowGridResize				: false, 
-// 	allowColumnResize			: false, 
-// 	allowClientSideSorting		: false, 
-// 	allowSelections				: true, 
-// 	allowMultipleSelections		: true, 
-// 	showSelectionColumn			: false, 
-// 	fixedCols					: 1,
-// 	supportMultipleGridsInView	: true
-// });
 
 /* fixed-tables init */
 $('#PricingSimFreezeTable').fxdHdrCol({
 	fixedCols:  0,
 	width:     "100%",
-	height:    200,
+	height:    500,
 	// 7 columns
 	colModal: [
 	   { width: 150, align: 'right' },
@@ -144,7 +132,7 @@ $('#PricingSimFreezeTable').fxdHdrCol({
 $('#PriceDiagnosticFreezeTable').fxdHdrCol({
 	fixedCols:  1,
 	width:     "100%",
-	height:    200,
+	height:    228, // just tall enough to prevent a vertical scroll
 	// 96 columns
 	colModal: [ 
 		   { width: 75, align: 'left' },
@@ -289,27 +277,6 @@ $('#postEventFreezeTable').fxdHdrCol({
 	height:    500,
 	// 21 columns
 	colModal: [
-	   // { width: 320, align: 'left' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' },
-	   // { width: 100, align: 'right' }
 		{ width: 270, align: 'left' },
 		{ width: 135, align: 'right' },
 		{ width: 135, align: 'right' },
