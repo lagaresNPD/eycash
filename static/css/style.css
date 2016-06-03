@@ -600,8 +600,16 @@ body {
     background-color: #f9f9f9;
 }
 
-
-
+/*.tpo-score-card-filled .ft_rc.ui-widget-header,
+.tpo-score-card-filled .ft_c,
+.tpo-score-card-filled .ft_cwrapper {
+	width: 304px;
+}
+.tpo-score-card-filled .ft_rc.ui-widget-header th,
+.tpo-score-card-filled .ft_c th {
+	height: 64px;
+}
+*/
 @media only screen and (max-width: 530px) {
 
 	.jumbotron h1 {

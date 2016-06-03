@@ -79,7 +79,7 @@
 			</div>
 			<div class="btn-group btn-group-justified filtersbtn-group btn-group-justified filters hidden-xs">
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">USA </b><span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">- Select One -</b><span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" data-id="result1">
 						<li><a href="#">USA</a></li>
@@ -95,7 +95,7 @@
 				</div>
 
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">Chips</b> <span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">- Select One -</b> <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" data-id="result2">
 						<li><a href="#">Chips</a></li>
@@ -107,17 +107,17 @@
 				</div>
 
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">Grocery</b> <span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">- Select One -</b> <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" data-id="result3">
 						<li><a href="#">Grocery</a></li>
-						<li><a href="#">Drug</a></li>
-						<li><a href="#">Mass Channel</a></li>
+						<!--li><a href="#">Drug</a></li>
+						<li><a href="#">Mass Channel</a></li-->
 					</ul>
 				</div>
 
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">Bop &amp; Shop</b> <span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">- Select One -</b> <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" data-id="result4">
 						<li><a href="#">Bop &amp; Shop</a></li>
@@ -127,22 +127,23 @@
 				</div>
 
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">Chips Baked 16 oz</b><span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">- Select One -</b><span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" data-id="result5">
 						<li><a href="#">Chips Baked 16 oz</a></li>
 						<li><a href="#">Chips Roasted 20 oz</a></li>
-						<li><a href="#">Fruit Mix Drink 25 oz</a></li>
+						<li><a href="#">Chips Family Size 25 oz</a></li>
+						<!--li><a href="#">Fruit Mix Drink 25 oz</a></li>
 						<li><a href="#">Cookie Family Size 45 oz</a></li>
 						<li><a href="#">Chocolate Bar 15 oz</a></li>
-						<li><a href="#">Chocolate Crispy 16 oz </a></li>
+						<li><a href="#">Chocolate Crispy 16 oz </a></li-->
 					</ul>
 				</div>
 
 				<div class="btn-group">
-					<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="collapse" data-target="#dateRangePicker" aria-expanded="false" aria-controls="dateRangePicker"><span class="small">Date Range Selector</span>-<span class="caret"></span>
+					<button type="button" class="btn btn-custom dropdown-toggle collapsed" data-toggle="collapse" data-target="#dateRangePicker" aria-expanded="false" aria-controls="dateRangePicker"><span class="small">Date Range Selector</span>01/01/2014 - 06/05/2016<span class="caret"></span>
 					</button>
-					<div class="collapse" id="dateRangePicker">
+					<div class="collapse" id="dateRangePicker" aria-expanded="false" style="height: 10px;">
 						<table class="table table-bordered table-compact mini-calendar" id="date-from">
 							<thead>
 							<tr>
@@ -157,7 +158,7 @@
 							<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
 							</tr>
 							<tr>
-							<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+							<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="active">13</td><td>14</td>
 							</tr>
 							<tr>
 							<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
@@ -185,7 +186,7 @@
 							<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
 							</tr>
 							<tr>
-							<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+							<td>8</td><td>9</td><td>10</td><td class="active">11</td><td>12</td><td>13</td><td>14</td>
 							</tr>
 							<tr>
 							<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
@@ -202,32 +203,26 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="main container-fluid">
 			<div class="report">
-			<h2>REPORT 1</h2>
-
 				<div class="row">
 					<div class="col col-xs-12">
 						<div class="panel panel-default content-card">
-							<iframe width="933" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2RhYmZiMDQtNWIxZS00NzI2LTliODMtODRmZTYxMGVmOGYyIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe> 					
+							<iframe width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiN2RhYmZiMDQtNWIxZS00NzI2LTliODMtODRmZTYxMGVmOGYyIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe> 					
 						</div>
 					</div>
 				</div>
 
 			</div>
-
-  			<div class="report hidden">
-				<h2>REPORT 2</h2>
+			<div class="report hidden">
 				<div class="row">
 					<div class="col col-xs-12">
 						<div class="panel panel-default content-card">
-							Insert second view content here
+							<iframe width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYzlmMjZmNzktZWVhNi00M2M1LTg0ZWEtMGViNWExMTM4MWVjIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
-
 
 				<div class="row">
 					<div class="col col-xs-12">

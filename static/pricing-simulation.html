@@ -85,7 +85,7 @@
 					</div>
 					<div class="btn-group btn-group-justified filtersbtn-group btn-group-justified filters hidden-xs">
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">USA </b><span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Country</span><b id="result1">- Select One -</b><span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result1">
 								<li><a href="#">USA</a></li>
@@ -101,7 +101,7 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">Chips</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Category</span><b id="result2">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result2">
 								<li><a href="#">Chips</a></li>
@@ -113,17 +113,17 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">Grocery</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Channel</span><b id="result3">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result3">
 								<li><a href="#">Grocery</a></li>
-								<li><a href="#">Drug</a></li>
-								<li><a href="#">Mass Channel</a></li>
+								<!--li><a href="#">Drug</a></li>
+								<li><a href="#">Mass Channel</a></li-->
 							</ul>
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">Bop &amp; Shop</b> <span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">Retailer</span><b id="result4">- Select One -</b> <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result4">
 								<li><a href="#">Bop &amp; Shop</a></li>
@@ -133,15 +133,16 @@
 						</div>
 
 						<div class="btn-group">
-							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">Chips Baked 16 oz</b><span class="caret"></span>
+							<button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="small">PPG</span><b id="result5">- Select One -</b><span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" data-id="result5" id="ppg">
 								<li><a href="#">Chips Baked 16 oz</a></li>
 								<li><a href="#">Chips Roasted 20 oz</a></li>
-								<li><a href="#">Fruit Mix Drink 25 oz</a></li>
+								<li><a href="#">Chips Family Size 25 oz</a></li>
+								<!--li><a href="#">Fruit Mix Drink 25 oz</a></li>
 								<li><a href="#">Cookie Family Size 45 oz</a></li>
 								<li><a href="#">Chocolate Bar 15 oz</a></li>
-								<li><a href="#">Chocolate Crispy 16 oz </a></li>
+								<li><a href="#">Chocolate Crispy 16 oz </a></li-->
 							</ul>
 						</div>
 					</div>					
@@ -150,47 +151,57 @@
 						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Filters</button>
 					</p>
 				</div>
-
 				<!-- main content area -->
 				<div class="main container-fluid">
-  					<div class="report">
-						<h2>REPORT 1</h2>
+					<div class="report">
 						<div class="row">
 							<div class="col col-sm-9">
-								PBI CONTENT 1
+								<iframe width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZTYyNDA0N2EtNTUzYy00ODc4LWJmZmItYWEzMTE0NWJiZmU0IiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 							</div>
 							<div class="col col-sm-3">
 								<div class="well insights">
-									<h4 class="panel-title">Pricing Simulation<br />Key Insights</h4>
-									<br />
+									<h4 class="panel-title">Pricing Simulation<br>Key Insights</h4>
+									<br>
 									<div class="panel panel-default content-card">
 										<table class="table table-striped table-bordered table-condensed data-table">
 											<thead>
 												<tr>
-													<th>Head 1</th>
-													<th>Head 2</th>
-													<th>Head 3</th>
-													<th>Head 4</th>
+													<th>&nbsp;</th>
+													<th>Current</th>
+													<th>Simulated</th>
+													<th>Change</th>
 												</tr>
 											</thead>
 											<tbody>
 											<tr>
-												<td>Data 1</td>
-												<td>1</td>
-												<td>1</td>
-												<td>1</td>
+												<td>Price</td>
+												<td class="gradeC">$ 1.52</td>
+												<td>$ 1.52</td>
+												<td>$ 0</td>
 											</tr>
 											<tr>
-												<td>Data 2</td>
-												<td>2</td>
-												<td>2</td>
-												<td>2</td>
+												<td>Volume</td>
+												<td class="gradeC">254,252</td>
+												<td>254,252</td>
+												<td>0</td>
 											</tr>
 											<tr>
-												<td>Data 3</td>
-												<td>3</td>
-												<td>3</td>
-												<td>3</td>
+												<td>Revenue</td>
+												<td class="gradeC">412,402</td>
+												<td>412,402</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td>Profit</td>
+												<td class="gradeC">120,454</td>
+												<td>120,454</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td>Margin %</td>
+												<td class="gradeC">29%</td>
+												<td>29%</td>
+												<td>0%</td>
 											</tr>
 										</tbody>
 										</table>
@@ -199,17 +210,16 @@
 							</div>
 						</div>
 					</div>
-  					<div class="report hidden">
-						<h2>REPORT 2</h2>
+					<div class="report hidden">
 						<div class="row">
 							<!-- main content area -->
 							<div class="col col-sm-9">
-								<iframe id="iframe" width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZTYyNDA0N2EtNTUzYy00ODc4LWJmZmItYWEzMTE0NWJiZmU0IiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+								<iframe id="iframe" width="1280" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYzU2ZDQyMzEtMDYxOS00ZTA0LWE1NDEtNjVlNmY0YWRkZmFkIiwidCI6ImJlNjM3MzRhLTk2YzUtNGU1NC04MDQ5LTcyYjZhZTEwZTM1NiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
 							</div>
 							<div class="col col-sm-3 sidebar">
 								<div class="well insights" id="table1">
-									<h4 class="panel-title">Pricing Simulation<br />Key Insights</h4>
-									<br />
+									<h4 class="panel-title">Pricing Simulation<br>Key Insights</h4>
+									<br>
 									<div class="panel panel-default content-card">
 										<table class="table table-striped table-bordered table-condensed data-table">
 											<thead>
@@ -222,58 +232,82 @@
 											</thead>
 											<tbody>
 											<tr>
+												<td>Price</td>
+												<td class="gradeC">$ 1.51</td>
+												<td>$ 1.51</td>
+												<td>$ 0</td>
+											</tr>
+											<tr>
 												<td>Volume</td>
-												<td>1</td>
-												<td>1</td>
-												<td class="gradeB">+13</td>
+												<td class="gradeC">254,252</td>
+												<td>254,252</td>
+												<td>0</td>
 											</tr>
 											<tr>
 												<td>Revenue</td>
-												<td>2</td>
-												<td>2</td>
-												<td class="gradeC">2</td>
+												<td class="gradeC">412,402</td>
+												<td>412,402</td>
+												<td>0</td>
 											</tr>
 											<tr>
 												<td>Profit</td>
-												<td>1</td>
-												<td>1</td>
-												<td class="gradeF">-30</td>
+												<td class="gradeC">120,454</td>
+												<td>120,454</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td>Margin %</td>
+												<td class="gradeC">31%</td>
+												<td>31%</td>
+												<td>0%</td>
 											</tr>
 											</tbody>
 										</table>
 									</div>
 								</div>
 								<div class="well insights hidden" id="table2">
-									<h4 class="panel-title">Pricing Simulation<br />Key Insights</h4>
-									<br />
+									<h4 class="panel-title">Pricing Simulation<br>Key Insights</h4>
+									<br>
 									<div class="panel panel-default content-card">
 										<table class="table table-striped table-bordered table-condensed data-table">
 											<thead>
 												<tr>
-													<th>Head 1</th>
-													<th>Head 2</th>
-													<th>Head 3</th>
-													<th>Head 4</th>
+													<th>&nbsp;</th>
+													<th>Price</th>
+													<th>Simulated</th>
+													<th>Change</th>
 												</tr>
 											</thead>
 											<tbody>
 											<tr>
-												<td>Data 1</td>
-												<td>1</td>
-												<td>1</td>
-												<td>1</td>
+												<td>Price</td>
+												<td class="gradeC">$ 1.51</td>
+												<td>$ 1.6</td>
+												<td>$ 0.09</td>
 											</tr>
 											<tr>
-												<td>Data 2</td>
-												<td>2</td>
-												<td>2</td>
-												<td>2</td>
+												<td>Volume</td>
+												<td class="gradeC">254,252</td>
+												<td>244,797</td>
+												<td>-9,415</td>
 											</tr>
 											<tr>
-												<td>Data 3</td>
-												<td>3</td>
-												<td>3</td>
-												<td>3</td>
+												<td>Revenue</td>
+												<td class="gradeC">412,402</td>
+												<td>390,696</td>
+												<td>4,294</td>
+											</tr>
+											<tr>
+												<td>Profit</td>
+												<td class="gradeC">120,454</td>
+												<td>115,993</td>
+												<td>-4461</td>
+											</tr>
+											<tr>
+												<td>Margin %</td>
+												<td class="gradeC">31%</td>
+												<td>30%</td>
+												<td>-1%</td>
 											</tr>
 										</tbody>
 										</table>
