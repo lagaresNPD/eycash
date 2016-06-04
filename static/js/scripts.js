@@ -62,7 +62,11 @@ $('.filters .mini-calendar tbody td').click( function () {
 
 /* listen for date range picked to update the view and collapse the dropdown */
 $('#date-to').click( function () {
-	$('.report').toggleClass('hidden');
+	if ($('.main').hasClass('ft')) {
+		$('.report').toggleClass('invisible');
+	} else {
+		$('.report').toggleClass('hidden');		
+	}
 	// $('.report').toggleClass('fadeout', function() {
 	// });
 
@@ -116,7 +120,8 @@ $('#carousel').carousel({
 // 	});
 // });
 
-$('#promoCal a.reveal').click(function() {
+$('#promoCal a.reveal').click(function(e) {
+	e.preventDefault();
 	$('#promoCal ul').toggleClass('hidden');
 	$(this).toggleClass('rotate');
 	var thisRow = $(this).parent().parent().parent().find('td');
@@ -334,7 +339,38 @@ $('#tpoScoreCardFilled').fxdHdrCol({
 });
 
 
-$('#postEventFreezeTable').fxdHdrCol({
+$('#postEventFreezeTableEmpty').fxdHdrCol({
+	fixedCols:  1,
+	width:     "100%",
+	height:    500,
+	// 21 columns
+	colModal: [
+		{ width: 270, align: 'left' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' },
+		{ width: 135, align: 'right' }
+	],
+	sort: false
+});
+
+$('#postEventFreezeTableFilled').fxdHdrCol({
 	fixedCols:  1,
 	width:     "100%",
 	height:    500,

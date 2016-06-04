@@ -474,7 +474,7 @@ body {
 	position: relative;
 }
 
-.main .report {
+/*.main .report {
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	opacity: 1;
@@ -482,7 +482,16 @@ body {
 .main .report.fadeout {
 	opacity: 0;
 }
+*/
 
+.ft .report {
+	height: auto;
+}
+
+.ft .report.invisible {
+	height: 0;
+	overflow: hidden; 
+}
 
 /* this is the 'alerts' sidebar */
 .sidebar .panel {
