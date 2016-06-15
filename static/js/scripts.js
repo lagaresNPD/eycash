@@ -26,6 +26,7 @@
 // 	$('.pd_chart .img-resposive').toggleClass('hidden');
 // })
 
+// Swap views in pricing diagnostic
 $("#imgSwap").hover(function(){
 	$(this).attr('src','images/EYCash_chart2mouseover.png');
 }, 
@@ -34,10 +35,11 @@ $("#imgSwap").hover(function(){
 });
 
 /* set filters label to name of selected link */
-$('.filters .btn-group a').click( function () {
-	var dd_result = $(this).text();
-	var dd_id = $(this).parent().parent().attr('data-id');
-	$('#' + dd_id).text(dd_result);
+$('.filters .btn-group a').click( function (e) {
+	e.preventDefault();
+	var choice = $(this).text();
+	var label = $(this).closest('.btn-group').find('label');
+	$(label).text(choice);
 });
 
 /* 	hides all but the first two options in the PPG dropdown when
@@ -73,8 +75,6 @@ $('#date-to').click( function () {
 	$('.picked-date').toggleClass('hidden');
 
 	$('#dateRangePicker').collapse('hide');
-
-	
 });
 
 /* listen for PPG picked to update the view and collapse the dropdown */
@@ -89,16 +89,6 @@ window.addEventListener('blur',function(){
 		$('.sidebar .insights').toggleClass('hidden');    
 	}
 });
-
-/* Animate scrolldown in trade promo page 
-- no longer in use because no PBI content anymore on this page  */
-// $('.tpo .nav-pills a').click( function () {
-//     var hash = '#tables';
-//     $('html, body').animate({
-//         'scrollTop': $('#tables').offset().top
-//     }, 1000);
-// });
-
 
 /* increase delay from default 2000ms */
 $('#carousel').carousel({
@@ -120,6 +110,7 @@ $('#carousel').carousel({
 // 	});
 // });
 
+/* expandable gantt chart row and format cells */
 $('#promoCal a.reveal').click(function(e) {
 	e.preventDefault();
 	$('#promoCal ul').toggleClass('hidden');
@@ -136,16 +127,65 @@ $('#promoCal a.reveal').click(function(e) {
 	}
 })
 
+/* handle the dropdowns in-table */
+$('table .dropdown a').click(function(e) {
+	e.preventDefault();
+	var choice = $(this).text();
+	var label = $(this).closest('.dropdown').find('label');
+	$(label).text(choice);
+})
 
-/* offcanvas.js */
-$(document).ready(function () {
-  $('[data-toggle="offcanvas"]').click(function () {
-	$('.row-offcanvas').toggleClass('active')
-  });
+/* init popup inside planning cal */
+$(function () {
+  $('[data-toggle="popover"]').popover({
+  	container: 'body',
+  	html: true,
+  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="panel panel-default content-card popover-content"></div></div>'
+  })
+})
+
+/* Animate scrolldown in trade promo page  */
+$('a[href="#inputs"]').click( function () {
+    $('html, body').animate({
+        'scrollTop': $('a[href="#top"]').offset().top
+    }, 750);
+	return false;
+});
+
+/* update the simulation table to new values - faked by swapping between old/new table */
+$('.update-btn').click(function() {
+	$('.scenario-results table').toggleClass('hidden');
+	$('html, body').animate({
+		'scrollTop': 0
+	}, 750);
+	return false;
 });
 
 
-/* fixed-tables init */
+/* offcanvas.js */
+$('[data-toggle="offcanvas"]').click(function () {
+	$('.row-offcanvas').toggleClass('active');
+});
+
+
+/* init editable table plugin */
+// $('#inputsTable').editableTableWidget();
+
+/* constrain updates to cells marked 'editable' */
+// $('#inputsTable td').on('change', function(evt, newValue) {
+// 	// change the simulation table after new cell values 
+// 	var rowIndex = $('#inputsTable tr').index($(this).closest('tr'));
+// 	if ( rowIndex !== 1 ) {
+// 		return false;
+// 	} else {
+// 		if (!($(this).hasClass('editable'))) { 
+// 			return false; // reject change
+// 		};
+// 	}
+// });
+
+
+/* fixed-column tables init */
 $('#PricingSimFreezeTable').fxdHdrCol({
 	fixedCols:  0,
 	width:     "100%",
