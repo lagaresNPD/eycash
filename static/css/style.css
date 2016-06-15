@@ -480,6 +480,7 @@ body {
 }
 */
 
+/* workaround to help the freezetable plugin operate correctly on hidden tables */
 .ft .report {
 	height: auto;
 }
@@ -488,6 +489,14 @@ body {
 	height: 0;
 	overflow: hidden; 
 }
+
+.popover-content {
+	font-size: 85%;
+	margin: 0.5rem;
+	overflow: hidden;
+	padding: 0;
+}
+
 
 /* this is the 'alerts' sidebar */
 .sidebar .panel {

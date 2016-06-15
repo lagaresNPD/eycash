@@ -159,6 +159,14 @@ $('table .dropdown a').click(function(e) {
 // 	}
 // });
 
+$(function () {
+  $('[data-toggle="popover"]').popover({
+  	container: 'body',
+  	html: true,
+  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="panel panel-default content-card popover-content"></div></div>'
+  })
+})
+
 /* update the simulation table to new values - faked by swapping between old/new table */
 $('.update-btn').click(function() {
 	$('.scenario-results table').toggleClass('hidden');
