@@ -34,10 +34,11 @@ $("#imgSwap").hover(function(){
 });
 
 /* set filters label to name of selected link */
-$('.filters .btn-group a').click( function () {
-	var dd_result = $(this).text();
-	var dd_id = $(this).parent().parent().attr('data-id');
-	$('#' + dd_id).text(dd_result);
+$('.filters .btn-group a').click( function (e) {
+	e.preventDefault();
+	var choice = $(this).text();
+	var label = $(this).closest('.btn-group').find('label');
+	$(label).text(choice);
 });
 
 /* 	hides all but the first two options in the PPG dropdown when
@@ -73,8 +74,6 @@ $('#date-to').click( function () {
 	$('.picked-date').toggleClass('hidden');
 
 	$('#dateRangePicker').collapse('hide');
-
-	
 });
 
 /* listen for PPG picked to update the view and collapse the dropdown */
@@ -136,11 +135,40 @@ $('#promoCal a.reveal').click(function(e) {
 	}
 })
 
+/* handle the dropdowns in-table */
+$('table .dropdown a').click(function(e) {
+	e.preventDefault();
+	var choice = $(this).text();
+	var label = $(this).closest('.dropdown').find('label');
+	$(label).text(choice);
+})
+
+/* init editable table plugin */
+// $('#inputsTable').editableTableWidget();
+
+/* constrain updates to cells marked 'editable' */
+// $('#inputsTable td').on('change', function(evt, newValue) {
+// 	// change the simulation table after new cell values 
+// 	var rowIndex = $('#inputsTable tr').index($(this).closest('tr'));
+// 	if ( rowIndex !== 1 ) {
+// 		return false;
+// 	} else {
+// 		if (!($(this).hasClass('editable'))) { 
+// 			return false; // reject change
+// 		};
+// 	}
+// });
+
+/* update the simulation table to new values - faked by swapping between old/new table */
+$('.update-btn').click(function() {
+	$('.scenario-results table').toggleClass('hidden');
+});
+
 
 /* offcanvas.js */
 $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
-	$('.row-offcanvas').toggleClass('active')
+	$('.row-offcanvas').toggleClass('active');
   });
 });
 
