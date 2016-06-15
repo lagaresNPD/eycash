@@ -333,6 +333,11 @@ body {
 #promoCal p {
 	margin: 0;
 }
+#promoCal ul {
+	margin-bottom: 30px;
+}
+
+
 .reveal {
 	display: inline-block;
 	transition:All .25s ease;

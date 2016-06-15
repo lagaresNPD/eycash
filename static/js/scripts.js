@@ -26,6 +26,7 @@
 // 	$('.pd_chart .img-resposive').toggleClass('hidden');
 // })
 
+// Swap views in pricing diagnostic
 $("#imgSwap").hover(function(){
 	$(this).attr('src','images/EYCash_chart2mouseover.png');
 }, 
@@ -89,16 +90,6 @@ window.addEventListener('blur',function(){
 	}
 });
 
-/* Animate scrolldown in trade promo page 
-- no longer in use because no PBI content anymore on this page  */
-// $('.tpo .nav-pills a').click( function () {
-//     var hash = '#tables';
-//     $('html, body').animate({
-//         'scrollTop': $('#tables').offset().top
-//     }, 1000);
-// });
-
-
 /* increase delay from default 2000ms */
 $('#carousel').carousel({
   interval: 5000
@@ -119,6 +110,7 @@ $('#carousel').carousel({
 // 	});
 // });
 
+/* expandable gantt chart row and format cells */
 $('#promoCal a.reveal').click(function(e) {
 	e.preventDefault();
 	$('#promoCal ul').toggleClass('hidden');
@@ -143,6 +135,39 @@ $('table .dropdown a').click(function(e) {
 	$(label).text(choice);
 })
 
+/* init popup inside planning cal */
+$(function () {
+  $('[data-toggle="popover"]').popover({
+  	container: 'body',
+  	html: true,
+  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="panel panel-default content-card popover-content"></div></div>'
+  })
+})
+
+/* Animate scrolldown in trade promo page  */
+$('a[href="#inputs"]').click( function () {
+    $('html, body').animate({
+        'scrollTop': $('a[href="#top"]').offset().top
+    }, 750);
+	return false;
+});
+
+/* update the simulation table to new values - faked by swapping between old/new table */
+$('.update-btn').click(function() {
+	$('.scenario-results table').toggleClass('hidden');
+	$('html, body').animate({
+		'scrollTop': 0
+	}, 750);
+	return false;
+});
+
+
+/* offcanvas.js */
+$('[data-toggle="offcanvas"]').click(function () {
+	$('.row-offcanvas').toggleClass('active');
+});
+
+
 /* init editable table plugin */
 // $('#inputsTable').editableTableWidget();
 
@@ -159,29 +184,8 @@ $('table .dropdown a').click(function(e) {
 // 	}
 // });
 
-$(function () {
-  $('[data-toggle="popover"]').popover({
-  	container: 'body',
-  	html: true,
-  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="panel panel-default content-card popover-content"></div></div>'
-  })
-})
 
-/* update the simulation table to new values - faked by swapping between old/new table */
-$('.update-btn').click(function() {
-	$('.scenario-results table').toggleClass('hidden');
-});
-
-
-/* offcanvas.js */
-$(document).ready(function () {
-  $('[data-toggle="offcanvas"]').click(function () {
-	$('.row-offcanvas').toggleClass('active');
-  });
-});
-
-
-/* fixed-tables init */
+/* fixed-column tables init */
 $('#PricingSimFreezeTable').fxdHdrCol({
 	fixedCols:  0,
 	width:     "100%",
