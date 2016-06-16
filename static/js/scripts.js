@@ -140,7 +140,7 @@ $(function () {
   $('[data-toggle="popover"]').popover({
   	container: 'body',
   	html: true,
-  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="panel panel-default content-card popover-content"></div></div>'
+  	template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title"></h4><br><div class="popover-content"></div></div>'
   })
 })
 
@@ -154,10 +154,10 @@ $('a[href="#inputs"]').click( function () {
 
 /* update the simulation table to new values - faked by swapping between old/new table */
 $('.update-btn').click(function() {
-	$('.scenario-results table').toggleClass('hidden');
-	$('html, body').animate({
-		'scrollTop': 0
-	}, 750);
+	$('#sim>.row').toggleClass('hidden');
+	// $('html, body').animate({
+	// 	'scrollTop': 0
+	// }, 750);
 	return false;
 });
 
@@ -201,6 +201,32 @@ $('#PricingSimFreezeTable').fxdHdrCol({
 	   { width: 150, align: 'right' },
 	   { width: 150, align: 'right' },
 	   { width: 150, align: 'right' }
+	],
+	sort: false
+});
+
+$('#iinputsFreezeTable').fxdHdrCol({
+	fixedCols:  1,
+	width:     "100%",
+	height:    500,
+	// 16 columns
+	colModal: [
+		{ width: 150, align: 'left' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'center' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' },
+		{ width: 100, align: 'right' }
 	],
 	sort: false
 });
