@@ -38,7 +38,7 @@ $("#imgSwap").hover(function(){
 $('.filters .btn-group a').click( function (e) {
 	e.preventDefault();
 	var choice = $(this).text();
-	var label = $(this).closest('.btn-group').find('label');
+	var label = $(this).closest('.btn-group').find('b');
 	$(label).text(choice);
 });
 
