@@ -14,6 +14,16 @@
     outline: none;
 }
 
+/* override bootstrap styles for subnavs */
+.nav-pills>li>a {
+	border-radius: 0;
+	padding: 0.25rem 0.75rem;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+	background: rgba(128,128,128,0.6);
+}
 
 /* quick way to make iframes responsive to their parent */	
 iframe, embed, object {
@@ -241,9 +251,7 @@ body {
 .main .subnav a {
 	font-weight: 700;
 }
-.main .subnav .active a {
-	background: #999;
-}
+
 .main h3 {
 	font-weight: 700;
 	margin: 2.5rem 0 2.5rem 1.5rem;
@@ -286,8 +294,13 @@ body {
 .main .data-table th:first-child {
 	white-space: nowrap;
 }
-.main .data-table td.editable {
-	background: #fcc755;
+.editable {
+	background: #fcc755; /* amber-ish color - should be blue-ish? */
+	overflow: visible;
+}
+.main .data-table .editable .dropdown-toggle {
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .main .data-table p {
@@ -401,23 +414,24 @@ body {
 }
 
 
-/* highlighted cells */
+/* highlighted cells - use with caution */
 
-.main .data-table .gradeA {
-	background-color: rgba(153,204,102,0.6);
+.gradeA {
+	background-color: rgba(153,204,102,0.6) !important;
 }
-.main .data-table .gradeB {
-	background-color: rgba(153,204,102,0.4);
+.gradeB {
+	background-color: rgba(153,204,102,0.4) !important;
 }
-.main .data-table .gradeC {
-	background-color: rgba(255,255,102,0.5);
+.gradeC {
+	background-color: rgba(255,255,102,0.5) !important;
 }
-.main .data-table .gradeD {
-	background-color: rgba(204,0,0,0.2);
+.gradeD {
+	background-color: rgba(204,0,0,0.2) !important;
 }
-.main .data-table .gradeF {
-	background-color: rgba(204,0,0,0.4);
+.gradeF {
+	background-color: rgba(204,0,0,0.4) !important;
 }
+
 .main .data-table thead th.highlight {
 	background: #ffe600;
 	color: #000;
@@ -496,12 +510,49 @@ body {
 }
 
 .popover-content {
-	font-size: 85%;
-	margin: 0.5rem;
+	background: #999;
+	font-size: 80%;
+	margin-top: -2rem;
+	/*margin: 0.5rem;*/
 	overflow: hidden;
 	padding: 0;
 }
+.popover-content table {
+	margin: 0;
+}
+.popover-content table td {
+	color: #ddd;
+}
+.popover-content table tbody tr:first-child {
+	border-top: 3px solid rgba(0,0,0,0.1);
+}
+.popover-content table th, 
+.popover-content table td:first-child {
+	color: #fff;
+	font-weight: 700;
+}
+.popover-content table th.price {
+	background: #0fb3d8;
+}
+.popover-content table th.simulated {
+	background: #36bf00;
+}
+.popover-content table th.change {
+	background: #ffe600;
+}
+.popover {
+	border-radius: 0;
+}
 
+
+#planTable tbody td {
+	width: 15%;
+}
+#planTable tbody td:first-child {
+	text-align: left;
+	white-space: normal;
+	width: 35%;
+}
 
 /* this is the 'alerts' sidebar */
 .sidebar .panel {
@@ -595,6 +646,10 @@ body {
 .ft_container table tr th, .ft_container table tr td {
 	background: transparent;
 	padding: 6px 8px;
+}
+.ft_container table tr td.editable {
+	background: #fcc755; /* amber-ish color - should be blue-ish? */
+	overflow: visible;
 }
 .ft_container table tr th {
 	background: #000; 
