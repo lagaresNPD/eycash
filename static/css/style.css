@@ -14,6 +14,16 @@
     outline: none;
 }
 
+/* override bootstrap styles for subnavs */
+.nav-pills>li>a {
+	border-radius: 0;
+	padding: 0.25rem 0.75rem;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+	background: rgba(128,128,128,0.6);
+}
 
 /* quick way to make iframes responsive to their parent */	
 iframe, embed, object {
@@ -241,9 +251,7 @@ body {
 .main .subnav a {
 	font-weight: 700;
 }
-.main .subnav .active a {
-	background: #999;
-}
+
 .main h3 {
 	font-weight: 700;
 	margin: 2.5rem 0 2.5rem 1.5rem;
@@ -503,7 +511,7 @@ body {
 
 .popover-content {
 	background: #999;
-	font-size: 85%;
+	font-size: 80%;
 	margin-top: -2rem;
 	/*margin: 0.5rem;*/
 	overflow: hidden;
@@ -515,14 +523,35 @@ body {
 .popover-content table td {
 	color: #ddd;
 }
+.popover-content table tbody tr:first-child {
+	border-top: 3px solid rgba(0,0,0,0.1);
+}
 .popover-content table th, 
 .popover-content table td:first-child {
 	color: #fff;
 	font-weight: 700;
 }
-
+.popover-content table th.price {
+	background: #0fb3d8;
+}
+.popover-content table th.simulated {
+	background: #36bf00;
+}
+.popover-content table th.change {
+	background: #ffe600;
+}
 .popover {
 	border-radius: 0;
+}
+
+
+#planTable tbody td {
+	width: 15%;
+}
+#planTable tbody td:first-child {
+	text-align: left;
+	white-space: normal;
+	width: 35%;
 }
 
 /* this is the 'alerts' sidebar */

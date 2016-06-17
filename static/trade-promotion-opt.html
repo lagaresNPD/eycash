@@ -77,7 +77,13 @@
 				<!-- section title area -->
 				<div class="jumbotron">
 					<div class="container-fluid">
-						<h2>Revenue Growth Management <span class="fa fa-angle-right" aria-hidden="true"></span></h2>
+						<ul class="nav nav-pills">
+							<li role="presentation" class="disabled"><a href="#">Revenue Growth Management <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+							<li role="presentation"><a href="price-diagnostic.html">Price Diagnostic</a></li>
+							<li role="presentation"><a href="pricing-simulation.html">Pricing Simulation</a></li>
+							<li role="presentation" class="active"><a href="trade-promotion-opt.html">Trade Promotion Optimization</a></li>
+							<li role="presentation"><a href="post-event-analysis.html">Post Event Analysis</a></li>
+						</ul>
 						<h1>Trade Promotion Optimization</h1>
 						<div class="pull-right">
 							<span class="fa fa-file-text"></span> <span class="fa fa-download"></span> <span class="fa fa-share-alt"></span>
@@ -386,7 +392,7 @@
 													<tr><td><strong>Manufacturer Incremental Revenue ($)</strong></td><td> 27,298 </td><td> 54,613 </td><td> 73,291 </td><td> 19,753 </td><td> 817,264 </td><td> 871,054 </td><td> 292,954 </td><td> 395,173 </td><td> 189,684 </td><td> 207,507 </td><td> 88,719 </td><td> 787,934 </td><td> 1,572,036 </td><td> 712,635 </td><td> 366,423 </td><td> 1,910,811 </td><td> 498,699 </td><td> 110,884 </td><td> 282,937 </td><td> 86,575 </td></tr>
 													<tr><td><strong>Manufacturer Incremental Volume (Units)</strong></td><td> 15,663 </td><td> 20,665 </td><td> 29,624 </td><td> 7,236 </td><td> 475,302 </td><td> 538,426 </td><td> 146,477 </td><td> 225,425 </td><td> 99,721 </td><td> 109,000 </td><td> 44,359 </td><td> 512,470 </td><td> 982,522 </td><td> 403,308 </td><td> 272,250 </td><td> 1,194,257 </td><td> 288,862 </td><td> 55,442 </td><td> 157,972 </td><td> 43,287 </td></tr>
 												</tbody>
-											</table> 									
+											</table>
 		 								</div>
 
 	 								<!--/div-->
@@ -1465,7 +1471,7 @@
 								</div>
 
 								<div class="tab-pane fade" id="plan">
-									<a class="btn btn-info pull-right" href="#inputs"><span class="fa fa-pencil" aria-hidden="true"></span> Edit Inputs</a>
+									<a class="btn btn-info pull-right" href="#inputs"><span class="fa fa-pencil" aria-hidden="true"></span>&nbsp;&nbsp;Add Inputs</a>
 									<h3>Planning</h3>
 									<div class="panel panel-default table-responsive">
 										<table id="promoCal" class="table table-striped table-bordered table-condensed data-table">
@@ -1745,127 +1751,313 @@
 													</th>
 												</tr>
 											</thead>
-											<tbody><tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Chips Baked 16 oz</strong></p></td>
-												<td><p class="fwidth"><strong>3 for $5</strong></p></td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52">
-													<div class="progress" style="position: relative; left: 5%; width: 20%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
+											<tbody>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Chips Baked 16 oz</strong></p></td>
+													<td><p class="fwidth"><strong>3 for $5</strong></p></td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52">
+														<div class="progress" style="position: relative; left: 5%; width: 20%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-											<tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Chips Roasted 20 oz</strong></p></td>
-												<td>
-													<p class="fwidth"><strong>BOGO</strong></p>
-													<ul class="list-unstyled hidden">
-														<li>Display</li>
-														<li>Feature</li>
-														<li>Promo Price</li> 
-														<li>Retail Price</li>
-														<li>Funding</li> 
-														<li>Miscellaneous</li>
-													</ul>
-												</td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#" class="reveal"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52" id="expandableCell">
-													<div class="progress" style="position: absolute; left: 4%; width: 10%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
-															<ul class="list-unstyled hidden">
-																<li>Bargain Aisle 3</li>
-																<li><div contenteditable="true">Feature Only - Front page</div></li>
-																<li><div contenteditable="true">$1.99</div></li> 
-																<li>$2.19</li>
-																<li>$2,000</li> 
-																<li>N/A</li>
-																<li class="text-right">
-																	<button type="button" class="btn btn-xs btn-info" data-toggle="popover" title="" data-content='<table class="table table-bordered table-condensed data-table"><thead><tr><th>&nbsp;</th><th>Price</th><th>Simulated</th><th>Change</th></tr></thead><tbody><tr><td>Price</td><td class="gradeC">$ 1.51</td><td>$ 1.6</td><td>$ 0.09</td></tr><tr><td>Volume</td><td class="gradeC">254,252</td><td>244,797</td><td>-9,415</td></tr><tr><td>Revenue</td><td class="gradeC">412,402</td><td>390,696</td><td>4,294</td></tr><tr><td>Profit</td><td class="gradeC">120,454</td><td>115,993</td><td>-4461</td></tr><tr><td>Margin %</td><td class="gradeC">31%</td><td>30%</td><td>-1%</td></tr></tbody></table>'>
-																		<span class="fa fa-table"></span>
-																	</button>
-																</li>
-															</ul>
+													</td>
+												</tr>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Chips Roasted 20 oz</strong></p></td>
+													<td>
+														<p class="fwidth"><strong>BOGO</strong></p>
+														<ul class="list-unstyled hidden">
+															<li>Display</li>
+															<li>Feature</li>
+															<li>Promo Price</li> 
+															<li>Retail Price</li>
+															<li>Funding</li> 
+															<li>Miscellaneous</li>
+														</ul>
+													</td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#" class="reveal"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52" id="expandableCell">
+														<div class="progress" style="position: absolute; left: 4%; width: 10%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+																<ul class="list-unstyled hidden">
+																	<li>Bargain Aisle 3</li>
+																	<li><div contenteditable="true">Feature Only - Front page</div></li>
+																	<li><div contenteditable="true">$1.99</div></li> 
+																	<li>$2.19</li>
+																	<li>$2,000</li> 
+																	<li>N/A</li>
+																	<li class="text-right">
+																		<a tabindex="0" role="button" class="btn btn-xs btn-info" data-toggle="popover" data-trigger="focus" data-placement="top" title="" data-content='<table class="table table-bordered table-condensed data-table"><thead><tr><th>January 18, 2016</th><th class="price">Price</th><th class="simulated">Simulated</th><th class="change">Change</th></tr></thead><tbody><tr><td>Price</td><td>$ 1.51</td><td>$ 1.6</td><td>$ 0.09</td></tr><tr><td>Volume</td><td>254,252</td><td>244,797</td><td>-9,415</td></tr><tr><td>Revenue</td><td>412,402</td><td>390,696</td><td>4,294</td></tr><tr><td>Profit</td><td>120,454</td><td>115,993</td><td>-4461</td></tr><tr><td>Margin %</td><td>31%</td><td>30%</td><td>-1%</td></tr></tbody></table>'>
+																			<span class="fa fa-table"></span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
 														</div>
-													</div>
-													<div class="progress" style="position: absolute; left: 40%; width: 10%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
-															<ul class="list-unstyled hidden">
-																<li>Category Fixture</li>
-																<li>Front &amp; Back</li>
-																<li>$1.95</li> 
-																<li>$2.19</li>
-																<li>$2,000</li> 
-																<li>N/A</li>
-															</ul>
+														<div class="progress" style="position: absolute; left: 40%; width: 10%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+																<ul class="list-unstyled hidden">
+																	<li>Category Fixture</li>
+																	<li>Front &amp; Back</li>
+																	<li>$1.95</li> 
+																	<li>$2.19</li>
+																	<li>$2,000</li> 
+																	<li>N/A</li>
+																</ul>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-											<tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Fruit Mix Drink 25 oz</strong></p></td>
-												<td><p class="fwidth"><strong>1 week $3.99</strong></p></td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52">
-													<div class="progress" style="position: relative; left: 4%; width: 3%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
+													</td>
+												</tr>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Fruit Mix Drink 25 oz</strong></p></td>
+													<td><p class="fwidth"><strong>1 week $3.99</strong></p></td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52">
+														<div class="progress" style="position: relative; left: 4%; width: 3%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-											<tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Cookie Family Size 45 oz</strong></p></td>
-												<td><p class="fwidth"><strong>2 for $6</strong></p></td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52">
-													<div class="progress" style="position: relative; left: 20%; width: 10%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
+													</td>
+												</tr>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Cookie Family Size 45 oz</strong></p></td>
+													<td><p class="fwidth"><strong>2 for $6</strong></p></td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52">
+														<div class="progress" style="position: relative; left: 20%; width: 10%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-											<tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Chocolate Bar 15 oz</strong></p></td>
-												<td><p class="fwidth"><strong>B2S$2</strong></p></td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52">
-													<div class="progress" style="position: relative; left: 2%; width: 20%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
+													</td>
+												</tr>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Chocolate Bar 15 oz</strong></p></td>
+													<td><p class="fwidth"><strong>B2S$2</strong></p></td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52">
+														<div class="progress" style="position: relative; left: 2%; width: 20%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-											<tr><!-- add/removable row -->
-												<td><p class="fwidth"><strong>Chocolate Crispy 16 oz</strong></p></td>
-												<td><p class="fwidth"><strong>MB 3/$6</strong></p></td>
-												<td>
-													<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
-												</td>
-												<td colspan="52">
-													<div class="progress" style="position: relative; left: 2%; width: 20%;">
-														<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-															<span class="sr-only">100%</span>
+													</td>
+												</tr>
+												<tr><!-- add/removable row -->
+													<td><p class="fwidth"><strong>Chocolate Crispy 16 oz</strong></p></td>
+													<td><p class="fwidth"><strong>MB 3/$6</strong></p></td>
+													<td>
+														<p class="text-center"><a href="http://cashdemo.edataanalytics.com/static/trade-promotion-opt.html#"><span class="fa fa-chevron-right"></span></a></p>
+													</td>
+													<td colspan="52">
+														<div class="progress" style="position: relative; left: 2%; width: 20%;">
+															<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+																<span class="sr-only">100%</span>
+															</div>
 														</div>
-													</div>
-												</td>
-											</tr>
-										</tbody>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<br>
+									<br>
+									<div class="panel panel-default table-responsive">
+										<table id="planTable" class="table table-striped table-bordered table-condensed data-table">
+											<thead>
+												<tr>
+													<th class="inverse">Event Description </th>
+													<th>Manufacturer Incremental Gross Profit <small>($)</small></th>
+													<th>Manufacturer Incremental Revenue <small>($)</small></th>
+													<th>Manufacturer Incremental Volume <small>(Units)</small></th>
+													<th>Scenario Spend</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Feature only fe dentyne ice gum $0.59; ad overlay 4/27/2014 0.59</td>
+													<td>$81,773</td>
+													<td>$168,958</td>
+													<td>288,750</td>
+													<td>57,520</td>
+												</tr>
+												<tr>
+													<td>Price reduction only fe tpr trident white, ice. stride x i.d.trident base $0.79; 3 week tpr 5/4/2014 - 5/17/2014; 5/24/2014 - 5/28/2014</td>
+													<td> $-1,540 </td>
+													<td> $17,003 </td>
+													<td> 32,663 </td>
+													<td> 17,297 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe dentyne ice gum; $0.79; 5/18/2014 0.67</td>
+													<td> $3,880 </td>
+													<td> 23,305 </td>
+													<td> 46,585 </td>
+													<td> 18,593 </td>
+												</tr>
+												<tr>
+													<td>Price reduction only fe dentyne ice $0.69; 6/22/2014 0.69</td>
+													<td> $9,896 </td>
+													<td> $29,259 </td>
+													<td> 58,961 </td>
+													<td> 18,547 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe dentyne ice $0.69; 7/20/2014 0.69</td>
+													<td> $4,964 </td>
+													<td> $17,731 </td>
+													<td> 34,675 </td>
+													<td> 11,807 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe gum $0.69; 8/10/2014 0.69</td>
+													<td> $7,705 </td>
+													<td> $23,060 </td>
+													<td> 44,953 </td>
+													<td> 13,980 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe gum $0.69; 9/7/2014 0.69</td>
+													<td> $-3,578 </td>
+													<td> $2,590 </td>
+													<td> 5,225 </td>
+													<td> 6,098 </td>
+												</tr>
+												<tr>
+													<td>Price reduction only fe gum $0.99; 3 week tpr; 9/28/2014, 10/5-10/11, 10/19/2014 0.99</td>
+													<td> $12,174 </td>
+													<td> $30,884 </td>
+													<td> 50,625 </td>
+													<td> 12,247 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe gum $0.75; 10/12/2014 0.75</td>
+													<td> $-8,001 </td>
+													<td> $3,534 </td>
+													<td> 6,992 </td>
+													<td> 11,340 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe gum $0.69; 11/2/2014 0.69</td>
+													<td> $3,130 </td>
+													<td> $17,551 </td>
+													<td> 36,889 </td>
+													<td> 14,665 </td>
+												</tr>
+												<tr>
+													<td>Feature only fe gum $0.69; 11/23/2014 0.69</td>
+													<td> $91 </td>
+													<td> $10,573 </td>
+													<td> 22,309 </td>
+													<td> 10,671 </td>
+												</tr>
+												<tr>
+													<td>Price reduction only december suggestive sell w/e 12/6 0.99</td>
+													<td> $9,831 </td>
+													<td> $17,969 </td>
+													<td> 27,643 </td>
+													<td> 3,504 </td>
+												</tr>
+												<tr>
+													<td>Feature only suggestive selfie gum 1 week 3/$2 or $0.90; get $1 reward 1000 pts. 12/7/2014 0.67</td>
+													<td>$-9,004</td>
+													<td>$5,779</td>
+													<td>11,664</td>
+													<td>14,630</td>
+												</tr>
+												<tr>
+													<td>Price reduction only december suggestive sell w/e 12/20 0.99</td>
+													<td>$7,509</td>
+													<td>$14,300</td>
+													<td>22,000</td>
+													<td>3,103</td>
+												</tr>
+												<tr>
+													<td>Price reduction only december suggestive sell w/e 12/27 0.99</td>
+													<td>$7,477</td>
+													<td>$14,419</td>
+													<td>22,183</td>
+													<td>3,224</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week $0.79 12/28/2014 0.79</td>
+													<td>$-4,371</td>
+													<td>$2,599</td>
+													<td>5,536</td>
+													<td>7,042</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week 3/$2 or $0.99 1/4/2015</td>
+													<td>$-12,036</td>
+													<td>$1,073</td>
+													<td>2,232</td>
+													<td>13,113</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week $0.79 1/18/2015 0.79</td>
+													<td>$1,864</td>
+													<td>$11,777</td>
+													<td>21,506</td>
+													<td>8,510</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week $0.69 1/25/2015 0.79</td>
+													<td>$-2,417</td>
+													<td>$8,342</td>
+													<td>17,602</td>
+													<td>10,908</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week $0.59 4/26/2015 0.59</td>
+													<td>$7,274</td>
+													<td>$25,201</td>
+													<td>52,853</td>
+													<td>18,223</td>
+												</tr>
+												<tr>
+													<td>Price reduction only 3 week tpr $0.99 5/3/2015 0.99</td>
+													<td>$12,969</td>
+													<td>$34,334</td>
+													<td>56,361</td>
+													<td>14,219</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week 3/$2; (1000point $reward, like paying 3/$1) 5/17/2015 0.67</td>
+													<td>$-19,316</td>
+													<td>$10,295</td>
+													<td>21,075</td>
+													<td>29,482</td>
+												</tr>
+												<tr>
+													<td>Price reduction only tpr $.99 5/31/2015 0.99</td>
+													<td>$-6,623</td>
+													<td>$1,381</td>
+													<td>3,232</td>
+													<td>8,182</td>
+												</tr>
+												<tr>
+													<td>Feature only 1 week 3/$2 7/12/2015 0.67</td>
+													<td>$-7,345</td>
+													<td>$1,066</td>
+													<td>2,372</td>
+													<td>8,490</td>
+												</tr>
+											</tbody>
 										</table>
 									</div>
 								</div>
