@@ -15,6 +15,13 @@
 }
 
 /* override bootstrap styles for subnavs */
+.jumbotron .nav-pills>li:first-child {
+	margin-top: 2px;
+}
+.jumbotron .nav-pills>li:first-child .fa {
+	padding-left: 0.5rem;
+}
+
 .nav-pills>li>a {
 	border-radius: 0;
 	padding: 0.25rem 0.75rem;
