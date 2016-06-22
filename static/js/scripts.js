@@ -44,16 +44,16 @@ $('.filters .btn-group a').click( function (e) {
 
 /* 	hides all but the first two options in the PPG dropdown when
  	the first option in Category, "Chips," is selected  */
-var category_opts = $('.filters .dropdown-menu[data-id=result2] li');
-var ppg_opts = $('.filters .dropdown-menu[data-id=result5] li');
-$(category_opts).click( function () {
-	$(ppg_opts).removeClass('hidden');
-});
-$(category_opts).eq(0).click( function () {
-	for (i=1; i < ppg_opts.length - 1; i++) {
-		$(ppg_opts).eq(i).addClass('hidden');
-	}
-});
+// var category_opts = $('.filters .dropdown-menu[data-id=result2] li');
+// var ppg_opts = $('.filters .dropdown-menu[data-id=result5] li');
+// $(category_opts).click( function () {
+// 	$(ppg_opts).removeClass('hidden');
+// });
+// $(category_opts).eq(0).click( function () {
+// 	for (i=1; i < ppg_opts.length - 1; i++) {
+// 		$(ppg_opts).eq(i).addClass('hidden');
+// 	}
+// });
 
 /* highlight date in mini calendar */
 $('.filters .mini-calendar tbody td').click( function () {
