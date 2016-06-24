@@ -356,6 +356,13 @@ body {
 #promoCal ul {
 	margin-bottom: 30px;
 }
+#promoCal input[type="text"] {
+	background: transparent;
+	border: none;
+	color: #333;
+	padding: 0;
+	width: 100%;
+}
 
 
 .reveal {

@@ -74,7 +74,7 @@
 				<div class="jumbotron">
 					<div class="container-fluid">
 						<ul class="nav nav-pills">
-							<li role="presentation">Revenue Growth Management <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+							<li role="presentation">Revenue Growth Management &nbsp;&nbsp;&gt;</li>
 							<li role="presentation"><a href="price-diagnostic.html">Price Diagnostic</a></li>
 							<li role="presentation"><a href="pricing-simulation.html">Pricing Simulation</a></li>
 							<li role="presentation" class="active"><a href="trade-promotion-opt.html">Trade Promotion Optimization</a></li>
@@ -1784,8 +1784,8 @@
 																<span class="sr-only">100%</span>
 																<ul class="list-unstyled hidden">
 																	<li>Bargain Aisle 3</li>
-																	<li><div contenteditable="true">Feature Only - Front page</div></li>
-																	<li><div contenteditable="true">$1.99</div></li> 
+																	<li><!-- <div contenteditable="true">Feature Only - Front page</div> --><input type="text" /></li>
+																	<li><!-- <div contenteditable="true">$1.99</div> --><input type="text" /></li> 
 																	<li>$2.19</li>
 																	<li>$2,000</li> 
 																	<li>N/A</li>
@@ -1807,6 +1807,7 @@
 																	<li>$2.19</li>
 																	<li>$2,000</li> 
 																	<li>N/A</li>
+																	<li>&nbsp;</li>
 																</ul>
 															</div>
 														</div>
@@ -1873,8 +1874,8 @@
 									</div>
 									<br>
 									<br>
-									<div class="panel panel-default table-responsive">
-										<table id="planTable" class="table table-striped table-bordered table-condensed data-table">
+									<div class="panel panel-default table-responsive" id="planTable">
+										<table class="table table-striped table-bordered table-condensed data-table">
 											<thead>
 												<tr>
 													<th class="inverse">Event Description </th>
@@ -1934,117 +1935,67 @@
 													<td> 50,625 </td>
 													<td> 489,161 </td>
 												</tr>
-												<!--tr>
-													<td>Super event, back to school super sale digital</td>
-													<td> $-8,001 </td>
-													<td> $3,534 </td>
-													<td> 6,992 </td>
-													<td> 156,181 </td>
+											</tbody>
+										</table>
+										<table class="table table-striped table-bordered table-condensed data-table hidden">
+											<thead>
+												<tr>
+													<th class="inverse">Event Description </th>
+													<th>Manufacturer Incremental Gross Profit <small>($)</small></th>
+													<th>Manufacturer Incremental Revenue <small>($)</small></th>
+													<th>Manufacturer Incremental Volume <small>(Units)</small></th>
+													<th>Scenario Spend</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Chips Baked 16 oz, Jan 18 to Mar 28</td>
+													<td>$81,773</td>
+													<td>$168,958</td>
+													<td>288,750</td>
+													<td>73,889</td>
 												</tr>
 												<tr>
-													<td>Super event, back to school super sale digital</td>
-													<td> $3,130 </td>
-													<td> $17,551 </td>
-													<td> 36,889 </td>
-													<td> 164,812 </td>
+													<td>Chips Roasted 20 oz, Jan 18 to Feb 22</td>
+													<td> $3,880 </td>
+													<td> $23,305 </td>
+													<td> 46,585 </td>
+													<td> 38,787 </td>
 												</tr>
 												<tr>
-													<td>feature, 10/$10 sale, promoted price</td>
-													<td> $91 </td>
-													<td> $10,573 </td>
-													<td> 22,309 </td>
-													<td> 96,689 </td>
+													<td>Chips Roasted 20 oz, May 23 to Jun 27</td>
+													<td> $9,896 </td>
+													<td> $29,259 </td>
+													<td> 58,961 </td>
+													<td> 11,536 </td>
 												</tr>
 												<tr>
-													<td>feature, price & item event</td>
-													<td> $9,831 </td>
-													<td> $17,969 </td>
-													<td> 27,643 </td>
-													<td> 762,244 </td>
+													<td>Chips Family 25 oz, Jan 18 to Jan 25</td>
+													<td> $4,964 </td>
+													<td> $17,731 </td>
+													<td> 34,675 </td>
+													<td> 646,140 </td>
 												</tr>
 												<tr>
-													<td>share builder, holiday/christmas</td>
-													<td>$-9,004</td>
-													<td>$5,779</td>
-													<td>11,664</td>
-													<td>1,411,783</td>
+													<td>Chips Barbeque 20 oz, Mar 14 to Apr 18</td>
+													<td> $7,705 </td>
+													<td> $23,060 </td>
+													<td> 44,953 </td>
+													<td> 806,779 </td>
 												</tr>
 												<tr>
-													<td>Super event, daytona Super; valentine's day selling</td>
-													<td>$7,509</td>
-													<td>$14,300</td>
-													<td>22,000</td>
-													<td>531,691</td>
+													<td>Chips Regular 15 oz, Jan 11 to Mar 21</td>
+													<td> $-3,578 </td>
+													<td> $2,590 </td>
+													<td> 5,225 </td>
+													<td> 254,442 </td>
 												</tr>
 												<tr>
-													<td>digital coupon, summer lockdown</td>
-													<td>$7,477</td>
-													<td>$14,419</td>
-													<td>22,183</td>
-													<td>531,018</td>
-												</tr>
-												<tr>
-													<td>share builder, b4s4 Super; 10/$10</td>
-													<td>$-4,371</td>
-													<td>$2,599</td>
-													<td>5,536</td>
-													<td>1,592,157</td>
-												</tr>
-												<tr>
-													<td>Super event, daytona Super b6s3; july 4th selling</td>
-													<td>$-12,036</td>
-													<td>$1,073</td>
-													<td>2,232</td>
-													<td>596,575</td>
-												</tr>
-												<tr>
-													<td>feature, 10/$10; chips new style</td>
-													<td>$1,864</td>
-													<td>$11,777</td>
-													<td>21,506</td>
-													<td>135,416</td>
-												</tr>
-												<tr>
-													<td>digital coupon, bts digital coupon event</td>
-													<td>$-2,417</td>
-													<td>$8,342</td>
-													<td>17,602</td>
-													<td>387,353</td>
-												</tr>
-												<tr>
-													<td>feature, 10/$10; private selection</td>
-													<td>$7,274</td>
-													<td>$25,201</td>
-													<td>52,853</td>
-													<td>101,992</td>
-												</tr-->
-												<!--tr>
-													<td>Price reduction only 3 week tpr $0.99 5/3/2015 0.99</td>
-													<td>$12,969</td>
-													<td>$34,334</td>
-													<td>56,361</td>
-													<td>14,219</td>
-												</tr>
-												<tr>
-													<td>Feature only 1 week 3/$2; (1000point $reward, like paying 3/$1) 5/17/2015 0.67</td>
-													<td>$-19,316</td>
-													<td>$10,295</td>
-													<td>21,075</td>
-													<td>29,482</td>
-												</tr>
-												<tr>
-													<td>Price reduction only tpr $.99 5/31/2015 0.99</td>
-													<td>$-6,623</td>
-													<td>$1,381</td>
-													<td>3,232</td>
-													<td>8,182</td>
-												</tr>
-												<tr>
-													<td>Feature only 1 week 3/$2 7/12/2015 0.67</td>
-													<td>$-7,345</td>
-													<td>$1,066</td>
-													<td>2,372</td>
-													<td>8,490</td-->
+													<td>Chips Sour Cream 20 oz, Jan 11 to Mar 21</td>
+													<td> $12,174 </td>
+													<td> $30,884 </td>
+													<td> 50,625 </td>
+													<td> 489,161 </td>
 												</tr>
 											</tbody>
 										</table>
