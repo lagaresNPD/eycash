@@ -152,13 +152,27 @@ $('a[href="#inputs"]').click( function () {
 	return false;
 });
 
-/* update the simulation table to new values - faked by swapping between old/new table */
+/* update the simulation table to new values - simulated by swapping between old/new table */
 $('.update-btn').click(function() {
 	$('#sim>.row').toggleClass('hidden');
 	// $('html, body').animate({
 	// 	'scrollTop': 0
 	// }, 750);
 	return false;
+});
+
+/* update the planning table to new values - simulated by swapping between old/new table */
+
+/* inject initial values of the editable options */
+$('#expandableCell input').eq(0).val('Feature only - Front page');
+$('#expandableCell input').eq(1).val('$1.99');
+
+/* enable the bottom table to change only if one of the editable values has changed - do nothing otherwise */
+$('#expandableCell input').change(function() {
+	$('a[data-toggle="popover"]').click(function() {
+		$('#planTable table').toggleClass('hidden');
+		return false;
+	});
 });
 
 
