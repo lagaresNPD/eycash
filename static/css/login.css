@@ -23,6 +23,10 @@ body {
     height: 100%;
 }
 
+.navbar-brand>img {
+	height: 4rem;
+}
+
 .nav-tabs {
 	border-bottom-color: transparent;
 }
