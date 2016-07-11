@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-	background: #ffe600 url(../images/EYCash_splashBG-01.jpg) no-repeat;
+	background: #ffe600 url(../images/eycash_bg.jpg) center no-repeat;
 	background-size: cover;
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0 auto;
