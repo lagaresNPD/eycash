@@ -622,6 +622,10 @@ body {
 	color: rgba(153,0,0,1);
 }
 
+/* pricing diagnostic sidebar table */
+.insights table th, .insights table td {
+	font-size: 75%;
+}
 
 /* global footer */
 .footer {
@@ -631,8 +635,6 @@ body {
 .footer .text-muted {
 	font-size: 75%;
 }
-
-
 
 
 /* customize carousel controls */
@@ -730,4 +732,13 @@ body {
 	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
 		margin-right: -30px;
 	}
+}
+
+/* to prevent sidebar table rendering glitches in medium windows */
+@media screen and (min-width: 1200px) and (max-width: 1410px) {
+
+	.insights table th, .insights table td {
+		font-size: 66%;
+	}
+
 }
